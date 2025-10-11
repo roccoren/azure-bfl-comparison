@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-bfl-compare"
+version = "0.1.0"
+description = "Batch comparison toolkit for Azure Flux API and official BFL Flux API image generations."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Flux Workspace Team" }
+]
+
+dependencies = [
+  "requests>=2.31.0",
+  "httpx>=0.27.0",
+  "pillow>=10.0.0",
+  "pydantic>=2.4.0",
+  "python-dotenv>=1.0.0",
+  "tenacity>=8.2.0",
+  "rich>=13.7.0",
+  "numpy>=1.24.0",
+  "opencv-python-headless>=4.10.0",
+  "torch>=2.1.0",
+  "torchvision>=0.16.0",
+  "segment-anything @ git+https://github.com/facebookresearch/segment-anything.git#egg=segment-anything"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.5.0",
+  "mypy>=1.8.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.10"
+strict = true

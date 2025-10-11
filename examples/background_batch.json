@@ -1,0 +1,952 @@
+[
+  {
+    "name": "ancient-chinese-architecture",
+    "payload": {
+      "prompt": "Modify the background to feature ancient Chinese architecture. Replace the current background with traditional Chinese buildings, such as pagodas and temples, showcasing intricate wooden structures, curved roofs, and ornate details. Incorporate elements like red lanterns and stone pathways to enhance the cultural atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new ancient Chinese architectural background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image67.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "lively-street-scene",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a lively street scene. Replace the current background with a bustling urban neighborhood filled with people, shops, and vibrant street life. Include details such as colorful storefronts, pedestrians walking, and vehicles passing by to create an energetic atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new lively street background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image31.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "sea-beach",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a sea and beach scene. Replace the current background with a view of the ocean and sandy beach, where the waves gently lap against the shore under a clear sky. Add details such as seashells and footprints on the sand to enhance the atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new sea and beach background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image46.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "traditional-jiangnan-water",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a traditional Jiangnan water town in China. Replace the current background with a picturesque view of ancient Chinese architecture along serene canals, featuring white-walled houses with black-tiled roofs, stone bridges arching over calm waters, and lush greenery. Maintain the main subject and foreground elements unchanged, ensuring they blend naturally with the new Jiangnan water town background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image27.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "eiffel-tower",
+    "payload": {
+      "prompt": "Modify the background so that it becomes the Eiffel Tower. Replace the current background with a view of the iconic Eiffel Tower in Paris, showcasing its intricate iron lattice structure against a clear sky. Keep the main subject and foreground objects unchanged, while blending them naturally with the new Eiffel Tower background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image35.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "european-ancient-architecture",
+    "payload": {
+      "prompt": "Modify the background to feature European ancient architecture. Replace the current background with a view of historic European buildings, showcasing classic architectural details such as stone facades, arches, and ornate windows. Ensure the new background blends naturally with the main subject and foreground elements, preserving their original appearance while enhancing the overall scene with a timeless European ambiance.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image53.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "grassy-meadow-at",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a grassy meadow at the foot of the mountain. Replace the current background with a lush green field stretching out beneath the base of a majestic mountain, with wildflowers and soft grass swaying gently in the breeze. Keep the main subject and foreground objects unchanged, while blending them naturally with the new mountain meadow background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image44.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "open-rooftop-party",
+    "payload": {
+      "prompt": "Modify the background to depict an open rooftop party on top of a skyscraper. Replace the current background with a vibrant cityscape view from the rooftop, featuring people socializing, lights, and decorations under the night sky. Keep the main subject and foreground objects unchanged, while blending them naturally with the new rooftop party scene.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image65.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "small-garden-swing",
+    "payload": {
+      "prompt": "Modify the background to a small garden with a swing. Replace the current background with a cozy garden scene featuring lush greenery, colorful flowers, and a charming swing hanging from a sturdy tree branch. Ensure the swing looks inviting and gently sways, adding a peaceful and playful atmosphere. Keep the main subject and foreground objects unchanged, blending them naturally with the new garden and swing background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image72.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "sunny-beach",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a sunny beach. Replace the current background with a bright and clear beach scene under a sunny sky, featuring golden sand and gentle waves. Keep the main subject and foreground objects unchanged, while blending them naturally with the new sunny beach background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image41.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "n-african-tribe",
+    "payload": {
+      "prompt": "Modify the background so that it becomes an African tribe in the desert. Replace the current background with a vast desert landscape featuring sand dunes and sparse vegetation, with traditional African tribal huts and people dressed in cultural attire. Add elements such as camels or wildlife native to the desert to enhance the scene. Keep the main subject and foreground objects unchanged, while blending them naturally with the new desert tribal background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image42.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "mountaintop-sea-clouds",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a mountaintop with a sea of clouds. Replace the current background with a breathtaking view from a mountain peak surrounded by a vast expanse of clouds, creating a serene and ethereal atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new mountaintop and cloud sea background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image57.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "eiffel-tower",
+    "payload": {
+      "prompt": "Modify the background so that it becomes the Eiffel Tower. Replace the current background with a view of the iconic Eiffel Tower in Paris, showcasing its intricate iron lattice structure against a clear sky. Keep the main subject and foreground objects unchanged, while blending them naturally with the new Eiffel Tower background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image28.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "sports-stadium-many",
+    "payload": {
+      "prompt": "Modify the background to become a lively sports stadium filled with many spectators. Replace the current background with a bustling sports arena scene, where the stands are crowded with enthusiastic fans cheering and vibrant banners waving. Ensure the atmosphere conveys excitement and energy, while keeping the main subject and foreground objects unchanged, blending them naturally with the new stadium background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image48.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "mountaintop-cliff",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a mountaintop and cliff scene. Replace the current background with a view of rugged cliffs and a majestic mountaintop, featuring rocky textures and dramatic elevation. Ensure the lighting highlights the natural contours of the cliffs and mountain, creating a sense of depth and grandeur. Keep the main subject and foreground objects unchanged, while blending them naturally with the new mountainous cliff background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image34.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "ancient-greek-architecture",
+    "payload": {
+      "prompt": "Modify the background to feature ancient Greek architecture. Replace the current background with iconic elements of classical Greek buildings, such as tall columns, intricate friezes, and marble structures, evoking the grandeur of ancient Greece. Ensure the main subject and foreground remain unchanged, seamlessly integrating them with the new architectural backdrop.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image25.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "bird-s-nest",
+    "payload": {
+      "prompt": "Modify the background so that it becomes the Bird's Nest Stadium. Replace the current background with a detailed view of the iconic Bird's Nest Stadium, showcasing its unique architectural design with interwoven steel beams. Ensure the stadium is depicted in a vibrant and realistic manner, capturing its grandeur and atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new Bird's Nest Stadium background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image32.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "grassy-field",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a grassy field. Replace the current background with a lush green meadow, filled with vibrant grass blades swaying gently in the breeze. Keep the main subject and foreground objects unchanged, while blending them naturally with the new grassy field background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image55.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "sunset-seascape",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a sunset seascape. Replace the current background with a view of the ocean under a glowing sunset, where the horizon is painted in warm tones of orange, pink, and gold reflecting on the water. Add seagulls flying gracefully over the sea to enhance the atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new ocean sunset background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image24.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "forbidden-city",
+    "payload": {
+      "prompt": "Modify the background so that it becomes the Forbidden City. Replace the current background with a detailed view of the iconic ancient Chinese palace complex, featuring traditional red walls, golden roofs, and intricate architectural details. Ensure the main subject and foreground objects remain unchanged, blending them naturally with the majestic and historic atmosphere of the Forbidden City.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image60.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "moonlit-desert",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a moonlit desert. Replace the current background with a view of a vast desert under the soft glow of moonlight, where the sand dunes are gently illuminated by the silvery light of the moon. Add subtle shadows and highlights to enhance the texture of the sand and create a serene nighttime atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new moonlit desert background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image61.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "snowy-mountain-landscape",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a snowy mountain landscape at sunset. Replace the current background with a view of majestic snow-covered mountains bathed in the warm glow of the setting sun, with soft hues of orange, pink, and purple illuminating the peaks. Keep the main subject and foreground objects unchanged, while blending them naturally with the new snowy mountain sunset background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image63.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "desolate-gobi-desert",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a desolate Gobi desert. Replace the current background with a vast, barren landscape of rocky terrain and sparse vegetation under a clear sky. Emphasize the dry, rugged nature of the Gobi desert while keeping the main subject and foreground objects unchanged, blending them naturally with the new desert background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image29.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "lively-street-scene",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a lively street scene. Replace the current background with a bustling urban neighborhood filled with vibrant shops, glowing signs, pedestrians, and warm street lighting. The atmosphere should feel energetic and dynamic, suggesting a busy and cheerful city district. Keep the main subject and foreground objects unchanged, while blending them naturally into the lively street background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image69.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "forbidden-city",
+    "payload": {
+      "prompt": "Modify the background so that it becomes the Forbidden City. Replace the current background with a detailed view of the Forbidden City, showcasing its traditional Chinese architecture with red walls, golden roofs, and intricate decorations. Ensure the main subject and foreground objects remain unchanged, blending them naturally with the new historic palace background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image54.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "sunset-mountain-top",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a sunset mountain top. Replace the current background with a view of a mountain peak under a glowing sunset, where the sky is painted in warm tones of orange, pink, and gold illuminating the mountain. Keep the main subject and foreground objects unchanged, while blending them naturally with the new sunset mountain top background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image56.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "misty-forest",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a misty forest. Replace the current background with a view of a forest enveloped in soft, swirling mist, creating a mysterious and serene atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new foggy forest background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image26.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "snowy-mountain-peak",
+    "payload": {
+      "prompt": "Modify the background to become the snowy mountain peak at sunrise. Replace the current background with a view of a snow-covered mountain summit illuminated by the warm, golden light of the rising sun. Capture the serene and majestic atmosphere of the early morning with soft shadows and glowing highlights on the snow. Keep the main subject and foreground objects unchanged, blending them naturally with the new sunrise mountain background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image64.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "stadium-football-match",
+    "payload": {
+      "prompt": "Modify the background to become a stadium where a football match is taking place. Replace the current background with a lively sports stadium filled with cheering crowds and players actively engaged in a football game. Ensure the atmosphere captures the excitement and energy of the match. Keep the main subject and foreground objects unchanged, while blending them naturally with the new football stadium background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image62.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "dense-forest",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a dense forest. Replace the current background with a view of a lush, dense forest filled with tall trees, rich green foliage, and dappled sunlight filtering through the leaves. Keep the main subject and foreground objects unchanged, while blending them naturally with the new forest background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image00.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "snowy-landscape",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a snowy landscape. Replace the current background with a view of a serene snow-covered scene, where the ground and trees are blanketed in white snow. Add gentle snowfall to enhance the atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new snowy background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image51.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "human-cityscape",
+    "payload": {
+      "prompt": "Modify the background to become a human cityscape. Replace the current background with a view of a bustling human city, featuring tall buildings, streets, and urban elements. Ensure the main subject and foreground objects remain unchanged, blending naturally with the new city background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image66.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "misty-pine-forest",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a misty pine forest in the morning. Replace the current background with a view of tall pine trees shrouded in soft morning mist, creating a serene and tranquil atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new misty pine forest background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image40.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "desert-landscape",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a desert landscape. Replace the current background with a vast desert scene featuring rolling sand dunes under a clear sky. Add subtle details like sparse desert vegetation and distant rocky formations to enhance the atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new desert background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image33.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "sunset-seascape",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a sunset seascape. Replace the current background with a view of the ocean under a glowing sunset, where the horizon is painted in warm tones of orange, pink, and gold reflecting on the water. Add seagulls flying gracefully over the sea to enhance the atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new ocean sunset background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image59.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "forest-path",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a forest path. Replace the current background with a view of a serene forest trail, surrounded by tall trees and dappled sunlight filtering through the leaves. Keep the main subject and foreground objects unchanged, while blending them naturally with the new forest path background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image30.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "church",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a church. Replace the current background with a view of a church, including architectural details such as stained glass windows, steeple, and stone walls. Ensure the church is well integrated into the scene, maintaining the main subject and foreground objects unchanged, while blending them naturally with the new church background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image70.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "window-side",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a window-side scene. Replace the current background with a view of a window, showing soft natural light coming through, possibly with curtains or a window frame visible. Keep the main subject and foreground objects unchanged, while blending them naturally with the new window-side background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image58.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "n-autumn-maple",
+    "payload": {
+      "prompt": "Modify the background so that it becomes an autumn maple forest. Replace the current background with a view of a forest filled with vibrant autumn maple trees, showcasing warm hues of red, orange, and yellow leaves. Create a serene and cozy atmosphere typical of fall, with soft sunlight filtering through the foliage. Keep the main subject and foreground objects unchanged, while blending them naturally with the new autumn maple forest background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image39.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "pile-stone-statues",
+    "payload": {
+      "prompt": "Modify the background to a pile of stone statues. Replace the current background with a scene filled with stacked stone statues, creating a textured and ancient atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new stone statue background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image36.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "grassy-field",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a grassy field. Replace the current background with a lush green meadow, filled with vibrant grass blades gently swaying in the breeze. Keep the main subject and foreground objects unchanged, while blending them naturally with the new grassy field background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image43.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "park-fountain",
+    "payload": {
+      "prompt": "Modify the background to become a park fountain. Replace the current background with a view of a park featuring a beautiful fountain, surrounded by greenery and flowers. Ensure the water in the fountain is sparkling and lively, creating a refreshing atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new park fountain background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image49.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "wooden-tower",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a wooden tower. Replace the current background with a view of a wooden tower, ensuring the structure is detailed and blends naturally with the existing elements. Keep the main subject and foreground objects unchanged, while integrating the wooden tower background seamlessly.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image45.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "forest-stream",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a forest stream. Replace the current background with a view of a serene forest creek, with clear flowing water surrounded by lush green trees and foliage. Keep the main subject and foreground objects unchanged, while blending them naturally with the new forest stream background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image52.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "sea-flowers",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a sea of flowers. Replace the current background with a vibrant field filled with blooming flowers of various colors, creating a lively and colorful atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new floral background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image68.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "sky-rainbow",
+    "payload": {
+      "prompt": "Modify the background to a sky with a rainbow. Replace the current background with a vibrant sky featuring a colorful rainbow arching gracefully across it. Ensure the rainbow's colors are vivid and blend naturally with the surrounding sky. Keep the main subject and foreground elements unchanged, seamlessly integrating them with the new rainbow sky background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image71.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "volcano",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a volcano. Replace the current background with a view of a majestic volcano, with smoke and lava flows visible, creating a dramatic and intense atmosphere. Keep the main subject and foreground objects unchanged, while blending them naturally with the new volcanic background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image47.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "cliff-waterfall",
+    "payload": {
+      "prompt": "Modify the background so that it becomes a cliff waterfall. Replace the current background with a view of a majestic waterfall cascading down a rugged cliff, surrounded by lush greenery and mist. Keep the main subject and foreground objects unchanged, while blending them naturally with the new cliff waterfall background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image37.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "petronas-twin-towers",
+    "payload": {
+      "prompt": "Modify the background to feature the Petronas Twin Towers in Kuala Lumpur. Replace the current background with a clear view of the iconic twin skyscrapers, highlighting their sleek, modern architecture against the city skyline. Ensure the towers are prominently visible, with natural lighting and atmospheric details that blend seamlessly with the existing foreground and main subject. Keep the main subject and foreground objects unchanged while integrating the new background harmoniously.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image50.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "starry-night-sky",
+    "payload": {
+      "prompt": "Modify the background to a starry night sky. Replace the current background with a dark sky filled with twinkling stars of various sizes and brightness, creating a serene and magical nighttime atmosphere. Keep the main subject and foreground elements unchanged, ensuring they blend naturally with the new starry night background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "images/background/image38.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "name": "ghibli",
+    "payload": {
+      "prompt": "Modify the image to ghibli style. Modify the color of the flower bouquet in the girl's hand to pink. Modify the color of the man's suit to black but keep the style. Keep the original photo perspective, lighting, and surrounding elements unchanged.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image194.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "traditional",
+    "payload": {
+      "prompt": "Modify the image to have a traditional Chinese style aesthetic, emphasizing cultural elements and colors typical of that style. Keep the original photo\u2019s perspective, lighting, and surrounding elements unchanged.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image245.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  }
+]

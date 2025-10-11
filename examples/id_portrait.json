@@ -1,0 +1,21 @@
+[
+  {
+    "name": "id-portrait",
+    "payload": {
+      "prompt": "A professional high-resolution, sharp, and clear visa ID portrait photo of the same person as the original image, keeping facial features, hairstyle, and overall appearance similar to the original, without excessive beautification or unrealistic alterations. The person should be centered with a plain white. The photo size should be between 354×472 and 1000×1333 pixels. The head should occupy about two-thirds of the image width, with the eyes positioned between one-third and one-half of the image height. The space above the head should be less than one-tenth of the image height, and the head height should cover about three-quarters of the image height. The subject must face the camera directly, with a neutral expression, mouth closed, both eyes open, and both ears visible. Lighting should be even, skin tone natural, and the photo must be realistic, clear, and suitable for an official passport/visa photo",
+      "negative_prompt": "blurry, pixelated, distorted, low-resolution, over-retouched, overly beautified, makeup-enhanced, filtered, cartoon-like, artificial, wrong proportions, head cut off, head tilted, uncentered subject, too much space above head, smiling, teeth showing, exaggerated expressions, eyes closed, looking away, uneven eyes, eyeglass glare, sunglasses, tinted lenses, hats, headwear, head coverings (except religious), accessories, earrings, jewelry, facial piercings, tattoos, shadows on face, uneven lighting, colored or patterned background, objects in background, text, watermark, artistic filter, fantasy style, anime style, 3D render",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "input/id/8369cd27ecdc46b956db767b4e557ceb.jpg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  }
+]

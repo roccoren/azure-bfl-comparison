@@ -1,0 +1,1025 @@
+[
+  {
+    "name": "image106_image107",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image127.jpeg",
+      "mask_path": "images/clothes/image126.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image106.jpeg with mask image107.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image110_image92",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image110.jpeg",
+      "mask_path": "images/clothes/image92.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image110.jpeg with mask image92.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image108_image85",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image108.jpeg",
+      "mask_path": "images/clothes/image85.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image108.jpeg with mask image85.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image112_image111",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image112.jpeg",
+      "mask_path": "images/clothes/image111.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image112.jpeg with mask image111.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image81_image80",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image81.jpeg",
+      "mask_path": "images/clothes/image80.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image81.jpeg with mask image80.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image124_image123",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image124.jpeg",
+      "mask_path": "images/clothes/image123.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image124.jpeg with mask image123.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image82_image83",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image82.jpeg",
+      "mask_path": "images/clothes/image83.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image82.jpeg with mask image83.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image93_image92",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image93.jpeg",
+      "mask_path": "images/clothes/image92.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image93.jpeg with mask image92.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image88_image89",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image88.jpeg",
+      "mask_path": "images/clothes/image89.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image88.jpeg with mask image89.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image109_image85",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image109.jpeg",
+      "mask_path": "images/clothes/image85.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image109.jpeg with mask image85.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image84_image85",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image84.jpeg",
+      "mask_path": "images/clothes/image85.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image84.jpeg with mask image85.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image73_image74",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image73.jpeg",
+      "mask_path": "images/clothes/image74.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image73.jpeg with mask image74.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image73_image75",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image73.jpeg",
+      "mask_path": "images/clothes/image75.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image73.jpeg with mask image75.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image98_image99",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image98.jpeg",
+      "mask_path": "images/clothes/image99.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image98.jpeg with mask image99.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image76_image77",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image76.jpeg",
+      "mask_path": "images/clothes/image77.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image76.jpeg with mask image77.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image131_image130",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image131.jpeg",
+      "mask_path": "images/clothes/image130.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image131.jpeg with mask image130.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image125_image99",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image125.jpeg",
+      "mask_path": "images/clothes/image99.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image125.jpeg with mask image99.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image127_image126",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image127.jpeg",
+      "mask_path": "images/clothes/image126.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image127.jpeg with mask image126.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image101_image100",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image101.jpeg",
+      "mask_path": "images/clothes/image100.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image101.jpeg with mask image100.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image94_image95",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image94.jpeg",
+      "mask_path": "images/clothes/image95.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image94.jpeg with mask image95.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image96_image97",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image96.jpeg",
+      "mask_path": "images/clothes/image97.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image96.jpeg with mask image97.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image128_image129",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image128.jpeg",
+      "mask_path": "images/clothes/image129.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image128.jpeg with mask image129.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image90_image91",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image90.jpeg",
+      "mask_path": "images/clothes/image91.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image90.jpeg with mask image91.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image78_image79",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image78.jpeg",
+      "mask_path": "images/clothes/image79.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image78.jpeg with mask image79.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image115_image116",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image115.jpeg",
+      "mask_path": "images/clothes/image116.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image115.jpeg with mask image116.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image86_image87",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image86.jpeg",
+      "mask_path": "images/clothes/image87.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image86.jpeg with mask image87.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image113_image114",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image113.jpeg",
+      "mask_path": "images/clothes/image114.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image113.jpeg with mask image114.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image102_image103",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image102.jpeg",
+      "mask_path": "images/clothes/image103.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image102.jpeg with mask image103.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image117_image118",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image117.jpeg",
+      "mask_path": "images/clothes/image118.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image117.jpeg with mask image118.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image105_image104",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image105.jpeg",
+      "mask_path": "images/clothes/image104.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image105.jpeg with mask image104.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image119_image120",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image119.jpeg",
+      "mask_path": "images/clothes/image120.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image119.jpeg with mask image120.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image132_image133",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image132.jpeg",
+      "mask_path": "images/clothes/image133.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image132.jpeg with mask image133.jpeg"
+        }
+      }
+    }
+  },
+  {
+    "name": "image121_image122",
+    "payload": {
+      "prompt": "Modify the image by replacing the clothes and shoes of the person with those shown in the mask image. Ensure the new clothing and footwear look photo-realistic, as if they are actually worn by the subject. Keep the person's identity, body, and face completely unchanged. Use the mask image only as a reference for the clothing and footwear design - ignore any other people or elements in the mask. Maintain natural textures, lighting, fabric folds, and realistic integration with the subject's posture and environment.",
+      "negative_prompt": "distorted anatomy, duplicated limbs, unnatural clothing fit, plastic-looking fabric, warped shoes, distracting text, watermark, blurred details, overexposed lighting, low-resolution artifacts",
+      "guidance_scale": 7.0,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image121.jpeg",
+      "mask_path": "images/clothes/image122.jpeg",
+      "extra": {
+        "response_format": [
+          "created",
+          "data"
+        ],
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "wardrobe_replacement"
+        },
+        "input": {
+          "strength": 0.45
+        },
+        "scheduler": "euler_a",
+        "output_format": "png",
+        "metadata": {
+          "subject": "person",
+          "style": "photo-realistic",
+          "notes": "Source image121.jpeg with mask image122.jpeg"
+        }
+      }
+    }
+  }
+]

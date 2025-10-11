@@ -1,0 +1,311 @@
+{
+  "images": [
+    {
+      "name": "image2",
+      "image_path": "images/sky/image2.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image3",
+      "image_path": "images/sky/image3.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image4",
+      "image_path": "images/sky/image4.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image5",
+      "image_path": "images/sky/image5.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image6",
+      "image_path": "images/sky/image6.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image7",
+      "image_path": "images/sky/image7.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image8",
+      "image_path": "images/sky/image8.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image9",
+      "image_path": "images/sky/image9.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image10",
+      "image_path": "images/sky/image10.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image11",
+      "image_path": "images/sky/image11.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image12",
+      "image_path": "images/sky/image12.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image13",
+      "image_path": "images/sky/image13.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image14",
+      "image_path": "images/sky/image14.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image15",
+      "image_path": "images/sky/image15.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image16",
+      "image_path": "images/sky/image16.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image17",
+      "image_path": "images/sky/image17.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image18",
+      "image_path": "images/sky/image18.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image19",
+      "image_path": "images/sky/image19.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image20",
+      "image_path": "images/sky/image20.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image21",
+      "image_path": "images/sky/image21.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image22",
+      "image_path": "images/sky/image22.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image23",
+      "image_path": "images/sky/image23.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "name": "sunny_cloud",
+      "payload": {
+        "prompt": "Modify the image so that the sky is bright and clear, with sunny weather and only a few light clouds. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current sky with a clean, natural blue sky that looks realistic.",
+        "negative_prompt": "",
+        "guidance_scale": 6.5,
+        "num_inference_steps": 20,
+        "extra": {
+          "input": {
+            "strength": 0.35
+          }
+        }
+      }
+    },
+    {
+      "name": "rainy",
+      "payload": {
+        "prompt": "Modify the image so that the sky looks rainy and overcast, with dark grey clouds covering most of the sky. Add a realistic rainy atmosphere with visible rain streaks and slightly softened lighting to match the weather. Keep all buildings, objects, and surroundings unchanged while making the scene look naturally like it is raining.",
+        "negative_prompt": "",
+        "guidance_scale": 6.5,
+        "num_inference_steps": 24,
+        "extra": {
+          "input": {
+            "strength": 0.4
+          }
+        }
+      }
+    },
+    {
+      "name": "nighttime",
+      "payload": {
+        "prompt": "Modify the image so that the sky becomes a nighttime scene. Replace the current sky with a deep dark blue or black night sky, dotted with stars or faint clouds. Adjust the overall lighting to reflect nighttime conditions while keeping the surroundings, buildings, and objects consistent and visible with subtle illumination. Ensure the atmosphere looks naturally like a night scene.",
+        "negative_prompt": "",
+        "guidance_scale": 6.5,
+        "num_inference_steps": 24,
+        "extra": {
+          "input": {
+            "strength": 0.4
+          }
+        }
+      }
+    },
+    {
+      "name": "evening",
+      "payload": {
+        "prompt": "Modify the image so that the sky transforms into an early evening scene, just after sunset, when night is falling. The sky should have a deep twilight tone, transitioning from dark blue to hints of fading warm light near the horizon. Add the effect of city lights or building lights just starting to glow—soft, warm illumination that contrasts gently with the darkening sky. Keep all buildings, objects, and surroundings unchanged while creating the atmosphere of dusk with city lights beginning to shine.",
+        "negative_prompt": "",
+        "guidance_scale": 6.5,
+        "num_inference_steps": 24,
+        "extra": {
+          "input": {
+            "strength": 0.4
+          }
+        }
+      }
+    },
+    {
+      "name": "sunset",
+      "payload": {
+        "prompt": "Modify the image so that the sky is filled with a beautiful sunset and evening glow. Replace the current sky with a warm sunset scene featuring rich colors—orange, pink, purple, and golden hues blending naturally across the horizon. Add soft, scattered clouds reflecting the sunset light to enhance the atmosphere. Keep all buildings, objects, and surroundings unchanged, while creating a natural and realistic evening sky with sunset and glowing clouds.",
+        "negative_prompt": "",
+        "guidance_scale": 6.5,
+        "num_inference_steps": 24,
+        "extra": {
+          "input": {
+            "strength": 0.4
+          }
+        }
+      }
+    },
+    {
+      "name": "scattered",
+      "payload": {
+        "prompt": "Modify the image so that the sky becomes a sunny day with scattered clouds. Replace the current sky with a bright blue backdrop filled with fluffy white clouds, creating a cheerful and natural daytime atmosphere. Ensure the lighting matches the clear sunny conditions while keeping all buildings, objects, and surroundings unchanged.",
+        "negative_prompt": "",
+        "guidance_scale": 6.5,
+        "num_inference_steps": 24,
+        "extra": {
+          "input": {
+            "strength": 0.4
+          }
+        }
+      }
+    }
+  ],
+  "name_pattern": "{image}-{profile}"
+}

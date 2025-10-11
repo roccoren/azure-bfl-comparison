@@ -1,0 +1,24 @@
+[
+  {
+    "name": "id8369_lace_jacket",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/clothes/image119.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/clothes/image120.jpeg",
+        "output_subdir": "id8369_lace_jacket",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  }
+]
