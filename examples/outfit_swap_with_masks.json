@@ -1,0 +1,692 @@
+[
+  {
+    "name": "try_on_01",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/1.jpg",
+      "mask_path": "images/try_on/mask/1.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/1.jpg",
+        "output_subdir": "try_on_01",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_02",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/2.jpg",
+      "mask_path": "images/try_on/mask/2.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/2.jpg",
+        "output_subdir": "try_on_02",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_03",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/3.jpg",
+      "mask_path": "images/try_on/mask/3.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/3.jpg",
+        "output_subdir": "try_on_03",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_04",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/4.jpg",
+      "mask_path": "images/try_on/mask/4.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/4.jpg",
+        "output_subdir": "try_on_04",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_05",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/5.jpg",
+      "mask_path": "images/try_on/mask/5.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/5.jpg",
+        "output_subdir": "try_on_05",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_06",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/6.jpg",
+      "mask_path": "images/try_on/mask/6.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/6.jpg",
+        "output_subdir": "try_on_06",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_07",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/7.jpg",
+      "mask_path": "images/try_on/mask/7.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/7.jpg",
+        "output_subdir": "try_on_07",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_08",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/8.jpg",
+      "mask_path": "images/try_on/mask/8.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/8.jpg",
+        "output_subdir": "try_on_08",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_09",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/9.jpg",
+      "mask_path": "images/try_on/mask/9.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/9.jpg",
+        "output_subdir": "try_on_09",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_10",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/10.jpg",
+      "mask_path": "images/try_on/mask/10.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/10.jpg",
+        "output_subdir": "try_on_10",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_11",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/11.jpg",
+      "mask_path": "images/try_on/mask/11.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/11.jpg",
+        "output_subdir": "try_on_11",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_12",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/12.jpg",
+      "mask_path": "images/try_on/mask/12.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/12.jpg",
+        "output_subdir": "try_on_12",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_13",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/13.jpg",
+      "mask_path": "images/try_on/mask/13.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/13.jpg",
+        "output_subdir": "try_on_13",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_14",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/14.jpg",
+      "mask_path": "images/try_on/mask/14.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/14.jpg",
+        "output_subdir": "try_on_14",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_15",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/15.jpg",
+      "mask_path": "images/try_on/mask/15.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/15.jpg",
+        "output_subdir": "try_on_15",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_16",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/16.jpg",
+      "mask_path": "images/try_on/mask/16.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/16.jpg",
+        "output_subdir": "try_on_16",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_17",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/17.jpg",
+      "mask_path": "images/try_on/mask/17.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/17.jpg",
+        "output_subdir": "try_on_17",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_18",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/18.jpg",
+      "mask_path": "images/try_on/mask/18.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/18.jpg",
+        "output_subdir": "try_on_18",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_19",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/19.jpg",
+      "mask_path": "images/try_on/mask/19.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/19.jpg",
+        "output_subdir": "try_on_19",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_20",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/20.jpg",
+      "mask_path": "images/try_on/mask/20.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/20.jpg",
+        "output_subdir": "try_on_20",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_21",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/21.jpg",
+      "mask_path": "images/try_on/mask/21.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/21.jpg",
+        "output_subdir": "try_on_21",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_22",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/22.jpg",
+      "mask_path": "images/try_on/mask/22.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/22.jpg",
+        "output_subdir": "try_on_22",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_23",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/23.jpg",
+      "mask_path": "images/try_on/mask/23.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/23.jpg",
+        "output_subdir": "try_on_23",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_24",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/24.jpg",
+      "mask_path": "images/try_on/mask/24.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/24.jpg",
+        "output_subdir": "try_on_24",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_25",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/25.jpg",
+      "mask_path": "images/try_on/mask/25.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/25.jpg",
+        "output_subdir": "try_on_25",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_26",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/26.jpg",
+      "mask_path": "images/try_on/mask/26.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/26.jpg",
+        "output_subdir": "try_on_26",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_27",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/27.jpg",
+      "mask_path": "images/try_on/mask/27.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/27.jpg",
+        "output_subdir": "try_on_27",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_28",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/28.jpg",
+      "mask_path": "images/try_on/mask/28.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/28.jpg",
+        "output_subdir": "try_on_28",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_29",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/29.jpg",
+      "mask_path": "images/try_on/mask/29.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/29.jpg",
+        "output_subdir": "try_on_29",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "try_on_30",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "images/try_on/person/30.jpg",
+      "mask_path": "images/try_on/mask/30.jpg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "images/try_on/clothes/30.jpg",
+        "output_subdir": "try_on_30",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  }
+]

@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import base64
 import binascii
+import io
 import time
 from typing import Any, Dict
 
 import httpx
+from PIL import Image
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from ..config import AzureGPTImageConfig
@@ -199,8 +201,15 @@ class AzureGPTImageClient:
         mask_b64 = request_body.get("mask")
         if mask_b64:
             mask_bytes = decode_image_field("mask", mask_b64)
-            mask_filename, mask_content_type = detect_file_metadata("mask", mask_bytes)
-            files.append(("mask", (mask_filename, mask_bytes, mask_content_type)))
+            with Image.open(io.BytesIO(mask_bytes)) as mask_image:
+                mask_l = mask_image.convert("L")
+                alpha = mask_l.point(lambda value: 0 if value > 127 else 255)
+                mask_rgba = Image.new("RGBA", mask_l.size, (255, 255, 255, 255))
+                mask_rgba.putalpha(alpha)
+                buffer = io.BytesIO()
+                mask_rgba.save(buffer, format="PNG")
+                mask_bytes = buffer.getvalue()
+            files.append(("mask", ("mask.png", mask_bytes, "image/png")))
 
         response = self._session.post(
             self._modification_path,

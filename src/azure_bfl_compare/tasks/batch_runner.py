@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import base64
-import os
 from contextlib import ExitStack
 from pathlib import Path
 from typing import Iterable
@@ -15,7 +14,8 @@ from ..clients.azure_gpt_image import AzureGPTImageClient
 from ..clients.bfl_flux import BFLFluxClient
 from ..output.comparer import OutputStore
 from ..types import GenerationResult
-from .outfit_transfer import EnhancedOutfitTransferPipeline, OutfitPreparationResult
+from .outfit_adapter import OutfitJob, OutfitSwapAdapter
+from .outfit_transfer import OutfitPreparationResult
 from .prompt_plan import BatchDefinition, BatchTask
 
 
@@ -42,6 +42,7 @@ class BatchRunner:
         self._console = console or Console()
         self._store = OutputStore(config.output.root_dir, batch_name=batch_name)
         self._outfit_context: dict[str, OutfitPreparationResult] = {}
+        self._outfit_adapter = OutfitSwapAdapter()
 
     def _prepare_tasks(self, tasks: Iterable[BatchTask]) -> None:
         """Expand enhanced outfit transfer tasks into combined image workflows."""
@@ -67,30 +68,18 @@ class BatchRunner:
             output_subdir = outfit_config.output_subdir or task.name
             output_dir = self._store.base_dir / "outfit" / output_subdir
 
-            pipeline = EnhancedOutfitTransferPipeline(
-                sam_checkpoint=outfit_config.sam_checkpoint,
-                sam_model_type=outfit_config.sam_model_type,
-                device=outfit_config.device,
-                azure_gpt_endpoint=os.getenv("AZURE_GPT_ENDPOINT"),
-                azure_gpt_key=os.getenv("AZURE_GPT_API_KEY"),
-                azure_gpt_deployment=os.getenv("AZURE_GPT_DEPLOYMENT"),
-                azure_gpt_api_version=os.getenv("AZURE_GPT_API_VERSION"),
-                azure_gpt_image_endpoint=os.getenv("AZURE_GPT_IMAGE_ENDPOINT"),
-                azure_gpt_image_key=os.getenv("AZURE_GPT_IMAGE_API_KEY"),
-                azure_gpt_image_deployment=os.getenv("AZURE_GPT_IMAGE_DEPLOYMENT"),
-                azure_gpt_image_api_version=os.getenv("AZURE_GPT_IMAGE_API_VERSION"),
-                use_gpt_image=os.getenv("ENABLE_AZURE_GPT_IMAGE", "false").lower() == "true",
-                deeplab_model_path=os.getenv("DEEPLAB_ONNX_PATH"),
-            )
-
-            preparation = pipeline.prepare(
+            job = OutfitJob(
                 task_name=task.name,
                 original_image=original_path,
                 clothes_image=clothes_path,
+                mask_image=original_mask_path,
                 output_dir=output_dir,
                 strength_override=outfit_config.strength,
-                original_mask_path=original_mask_path,
+                sam_checkpoint=outfit_config.sam_checkpoint,
+                sam_model_type=outfit_config.sam_model_type,
+                device=outfit_config.device,
             )
+            preparation = self._outfit_adapter.prepare(job)
 
             new_extra = self._merge_strength(task.payload.extra, preparation.strength)
             updated_payload = task.payload.model_copy(
@@ -125,11 +114,32 @@ class BatchRunner:
         metadata = result.mutable_metadata()
         for key in ("image", "mask", "person_image", "garment_image"):
             metadata.pop(key, None)
+        adapter_passthrough = bool(metadata.pop("_outfit_adapter", False))
         outfit_meta = metadata.setdefault("outfit_transfer", {})
         outfit_meta.update(preparation.metadata())
         outfit_meta["strength"] = preparation.strength
 
-        processed_bytes = preparation.crop_output(result.image_bytes)
+        if adapter_passthrough:
+            outfit_meta["postprocess"] = "adapter_passthrough"
+            return GenerationResult(
+                provider=result.provider,
+                task_name=result.task_name,
+                image_bytes=result.image_bytes,
+                metadata=metadata,
+            )
+
+        processed_bytes = result.image_bytes
+        if result.provider == "azure":
+            try:
+                composited_bytes, _raw_bytes = preparation.compose_flux_output(result.image_bytes)
+                processed_bytes = composited_bytes
+                outfit_meta["postprocess"] = "composite_flux_output"
+            except Exception as exc:  # pragma: no cover - defensive guard
+                outfit_meta["postprocess"] = f"composite_failed: {exc}"
+                processed_bytes = preparation.crop_output(result.image_bytes)
+        else:
+            outfit_meta["postprocess"] = "crop_output"
+            processed_bytes = preparation.crop_output(result.image_bytes)
 
         return GenerationResult(
             provider=result.provider,
@@ -198,13 +208,62 @@ class BatchRunner:
                     mask_path = payload.pop("mask_path", None)
                     payload.pop("outfit", None)
 
+                    preparation = self._outfit_context.get(task.name)
+
+                    seed_candidates: list[object] = []
+                    if payload.get("seed") is not None:
+                        seed_candidates.append(payload["seed"])
+
+                    if isinstance(extra, dict):
+                        input_block = extra.get("input")
+                        if isinstance(input_block, dict):
+                            if input_block.get("seed") is not None:
+                                seed_candidates.append(input_block["seed"])
+                        if extra.get("seed") is not None:
+                            seed_candidates.append(extra["seed"])
+
+                    seed_value = seed_candidates[-1] if seed_candidates else None
+
+                    if preparation is not None:
+                        exec_result = self._outfit_adapter.execute_flux(
+                            task.name,
+                            seed=seed_value,
+                        )
+                        metadata = dict(exec_result.metadata)
+                        return GenerationResult(
+                            provider="azure",
+                            task_name=task.name,
+                            image_bytes=exec_result.image_bytes,
+                            metadata=metadata,
+                        )
+
                     if not image_path:
                         raise RuntimeError(
                             f"Task '{task.name}' requires 'image_path' for modification workflow."
                         )
 
-                    azure_payload: dict[str, object] = {k: v for k, v in payload.items() if v is not None}
-                    azure_payload.update(extra)
+                    allowed_base_keys = {"prompt", "negative_prompt", "strength", "seed"}
+                    azure_payload = {
+                        key: value
+                        for key, value in payload.items()
+                        if key in allowed_base_keys and value not in {None, ""}
+                    }
+
+                    allowed_override_keys = {"seed", "strength"}
+                    if isinstance(extra, dict):
+                        input_block = extra.get("input")
+                        if isinstance(input_block, dict):
+                            for key in ("seed", "strength"):
+                                if input_block.get(key) is not None and key not in azure_payload:
+                                    azure_payload[key] = input_block[key]
+                        for key in allowed_override_keys:
+                            value = extra.get(key)
+                            if value is not None and key not in azure_payload:
+                                azure_payload[key] = value
+
+                    if seed_value is not None and "seed" not in azure_payload:
+                        azure_payload["seed"] = seed_value
+
                     azure_payload["image"] = self._encode_file(image_path, "Base image")
                     if mask_path:
                         azure_payload["mask"] = self._encode_file(mask_path, "Mask image")
@@ -252,6 +311,8 @@ class BatchRunner:
                     if mask_source:
                         gpt_payload["mask"] = self._encode_file(mask_source, "Mask image")
 
+                    negative_prompt = gpt_payload.pop("negative_prompt", None)
+
                     # Azure GPT-Image edits endpoint follows OpenAI spec, which only accepts:
                     # image, prompt, mask, n, size, response_format, user
                     # Drop all other parameters that cause 400 Bad Request
@@ -270,6 +331,14 @@ class BatchRunner:
                         for key, value in gpt_payload.items()
                         if key in allowed_gpt_keys
                     }
+                    
+                    if negative_prompt:
+                        base_prompt = str(gpt_payload.get("prompt") or "")
+                        suffix = negative_prompt.strip().rstrip(".")
+                        if base_prompt:
+                            gpt_payload["prompt"] = f"{base_prompt} Avoid: {suffix}."
+                        else:
+                            gpt_payload["prompt"] = f"Avoid: {suffix}."
                     
                     # Remove model if it's already in the deployment path
                     # The endpoint URL already includes the deployment name

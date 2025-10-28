@@ -10,7 +10,6 @@ from pathlib import Path
 from typing import Dict, Tuple
 
 import httpx
-import numpy as np
 from dotenv import load_dotenv
 from PIL import Image, ImageOps
 
@@ -322,15 +321,16 @@ def _gpt_prompt_messages(
     clothes_data_url: str,
 ) -> list[dict[str, object]]:
     instructions = (
-        "You are a senior fashion stylist and generative image prompt engineer. "
-        "Study the provided person photo and clothing reference image. "
-        "Return a JSON object with two keys: prompt, negative_prompt. "
-        "The prompt should instruct an image inpainting model (Flux) to replace the person's current outfit "
-        "with the garments shown, while preserving the person's identity, pose, lighting, and background. "
-        "Summarise the clothing's colors, materials, silhouette, and styling tips. "
-        "Ensure the prompt keeps camera angle and composition fixed. "
-        "The negative_prompt should discourage deformations, extra limbs, cropped heads, text artifacts, "
-        "logo hallucinations, or changing the background. Respond with valid JSON only."
+        "You are a precise fashion prompt engineer. "
+        "Study the person photo and the clothing reference image. "
+        "Return a JSON object with exactly two keys: prompt and negative_prompt. "
+        "The prompt must only describe replacing the clothing on the person with the garments exactly as they appear in "
+        "the reference image (colors, materials, silhouette, notable details) while preserving the person's identity, "
+        "pose, lighting, background, and every element not covered by the reference garment. "
+        "Do not mention or suggest any additional garments, accessories, alternate colors, or styling advice. "
+        "Explicitly instruct the model to keep all other visual aspects unchanged. "
+        "The negative_prompt should focus on avoiding structural distortions, background changes, artifacts, or any "
+        "alteration beyond the targeted garment. Respond with valid JSON only."
     )
     return [
         {"role": "system", "content": "You craft meticulous prompts for diffusion-based outfit swaps."},
@@ -395,9 +395,9 @@ def generate_prompts_via_gpt(
 
 def _fallback_prompts() -> tuple[str, str]:
     prompt = (
-        "High-end fashion editorial photo of the same person wearing the reference outfit. "
+        "High-end fashion editorial photo of the same person wearing the provided reference outfit exactly. "
         "Keep identity, pose, lighting, camera angle, and environment identical. "
-        "Seamlessly fit the garments with realistic draping, natural shadows, and matching color tones."
+        "Match the garment's colors, materials, and silhouette precisely with natural draping and shadows while leaving all other elements untouched."
     )
     negative = (
         "blurry, text, logo, watermark, extra limbs, distorted body, different background, different face, cropped head"
@@ -505,34 +505,14 @@ def main() -> None:
         panel_rgb = panel_image.convert("RGB")
         if panel_rgb.size != assets.combined_size:
             panel_rgb = panel_rgb.resize(assets.combined_size, _LANCZOS)
-        panel_array = np.asarray(panel_rgb, dtype=np.uint8)
-        white_mask = (panel_array > 245).all(axis=2)
-        left_limit = min(
-            assets.combined_size[0],
-            max(0, int(round(assets.person_region[0] + assets.person_region[2] * 1.1))),
-        )
-        person_mask = ~white_mask
-        person_mask[:, left_limit:] = False
-        coords = np.argwhere(person_mask)
-        if coords.size == 0:
-            px, py, pw, ph = assets.person_region
-            crop_box = (px, py, px + pw, py + ph)
-        else:
-            min_y = int(coords[:, 0].min())
-            max_y = int(coords[:, 0].max())
-            min_x = int(coords[:, 1].min())
-            max_x = int(coords[:, 1].max())
-            crop_box = (min_x, min_y, max_x + 1, max_y + 1)
-        cropped_rgb = panel_rgb.crop(crop_box)
-        if cropped_rgb.size != assets.original_size:
-            cropped_rgb = cropped_rgb.resize(assets.original_size, _LANCZOS)
+
         with BytesIO() as buffer:
-            cropped_rgb.save(buffer, format="PNG")
+            panel_rgb.save(buffer, format="PNG")
             cropped_bytes = buffer.getvalue()
 
     output_image_path = output_dir / "output_flux.png"
     output_image_path.write_bytes(cropped_bytes)
-    print(f"✓ Cropped outfit swap saved to {output_image_path}")
+    print(f"✓ Flux panel saved to {output_image_path}")
     print(f"  Raw panel preserved at {raw_panel_path}")
 
     metadata_path = output_dir / "flux_metadata.json"
@@ -548,12 +528,6 @@ def main() -> None:
         "height": assets.person_region[3],
     }
     metadata["original_size"] = {"width": assets.original_size[0], "height": assets.original_size[1]}
-    metadata["final_crop_box"] = {
-        "left": crop_box[0],
-        "top": crop_box[1],
-        "right": crop_box[2],
-        "bottom": crop_box[3],
-    }
     metadata["raw_panel"] = str(raw_panel_path)
     metadata_path.write_text(json.dumps(metadata, indent=2))
     print(f"  Metadata stored at {metadata_path}")

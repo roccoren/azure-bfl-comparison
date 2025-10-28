@@ -4,6 +4,7 @@ import base64
 import io
 import json
 import os
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
@@ -83,6 +84,103 @@ class OutfitPreparationResult:
                 output_image.save(buffer, format="PNG")
                 return buffer.getvalue()
 
+    def compose_flux_output(self, image_bytes: bytes) -> tuple[bytes, bytes]:
+        """
+        Composite a Flux output onto the original frame using the prepared mask.
+
+        Returns
+        -------
+        tuple[bytes, bytes]
+            (composited_image_bytes, raw_flux_bytes)
+        """
+        raw_flux_bytes = image_bytes
+        cropped_bytes = self.crop_output(image_bytes)
+
+        with Image.open(io.BytesIO(cropped_bytes)) as flux_image:  # type: ignore[name-defined]
+            flux_rgba = flux_image.convert("RGBA")
+        with Image.open(self.original_image_path) as original_image:
+            original_rgba = original_image.convert("RGBA")
+        with Image.open(self.target_mask_path) as mask_image:
+            mask_l = mask_image.convert("L")
+
+        if flux_rgba.size != original_rgba.size:
+            flux_rgba = flux_rgba.resize(original_rgba.size, LANCZOS)
+        if mask_l.size != original_rgba.size:
+            mask_l = mask_l.resize(original_rgba.size, LANCZOS)
+
+        preserve_flux_only = (
+            os.getenv("FLUX_PRESERVE_MODEL_EDITS", "false").strip().lower()
+            in {"1", "true", "yes", "on"}
+        )
+
+        if not preserve_flux_only:
+            flux_array = np.asarray(flux_rgba, dtype=np.uint8).copy()
+            original_array = np.asarray(original_rgba, dtype=np.uint8)
+            mask_array = np.asarray(mask_l, dtype=np.uint8)
+
+            white_regions = (
+                (flux_array[..., 0] > 245)
+                & (flux_array[..., 1] > 245)
+                & (flux_array[..., 2] > 245)
+                & (mask_array > 0)
+            )
+
+            remaining_white = white_regions.copy()
+            if remaining_white.any():
+                try:
+                    with Image.open(self.clothes_image_path) as clothes_img:
+                        clothes_rgba_src = clothes_img.convert("RGBA")
+                    with Image.open(self.clothes_mask_path) as clothes_mask_img:
+                        clothes_mask = clothes_mask_img.convert("L")
+                except Exception:
+                    clothes_rgba_src = None
+                    clothes_mask = None
+
+                if clothes_rgba_src is not None and clothes_mask is not None:
+                    if clothes_rgba_src.size != clothes_mask.size:
+                        clothes_mask = clothes_mask.resize(clothes_rgba_src.size, LANCZOS)
+                    clothes_rgba_src = clothes_rgba_src.copy()
+                    clothes_rgba_src.putalpha(clothes_mask)
+
+                    overlay_canvas = Image.new("RGBA", original_rgba.size, (0, 0, 0, 0))
+                    coords = np.argwhere(mask_array > 0)
+                    if coords.size > 0:
+                        top = int(coords[:, 0].min())
+                        bottom = int(coords[:, 0].max()) + 1
+                        left = int(coords[:, 1].min())
+                        right = int(coords[:, 1].max()) + 1
+                        target_width = max(1, right - left)
+                        target_height = max(1, bottom - top)
+
+                        resized_clothes = clothes_rgba_src.resize((target_width, target_height), LANCZOS)
+                        overlay_canvas.paste(resized_clothes, (left, top), resized_clothes)
+
+                        overlay_array = np.asarray(overlay_canvas, dtype=np.uint8)
+                        overlay_alpha = overlay_array[..., 3]
+                        overlay_mask = overlay_alpha > 0
+                        fill_mask = remaining_white & overlay_mask
+                        if fill_mask.any():
+                            flux_array[..., :3][fill_mask] = overlay_array[..., :3][fill_mask]
+                            flux_array[..., 3][fill_mask] = overlay_alpha[fill_mask]
+                            remaining_white = remaining_white & ~fill_mask
+
+            if remaining_white.any():
+                flux_array[..., :3][remaining_white] = original_array[..., :3][remaining_white]
+                flux_array[..., 3][remaining_white] = original_array[..., 3][remaining_white]
+
+            flux_rgba = Image.fromarray(flux_array, mode="RGBA")
+
+        composite = original_rgba.copy()
+        refined_mask = mask_l.filter(ImageFilter.MinFilter(3))
+        refined_mask = refined_mask.filter(ImageFilter.GaussianBlur(radius=2))
+        composite.paste(flux_rgba, mask=refined_mask)
+
+        with io.BytesIO() as buffer:  # type: ignore[name-defined]
+            composite.convert("RGB").save(buffer, format="PNG")
+            final_bytes = buffer.getvalue()
+
+        return final_bytes, raw_flux_bytes
+
     def metadata(self) -> Dict[str, object]:
         """Expose auxiliary paths and analysis data for metadata storage."""
         data: Dict[str, object] = {
@@ -113,20 +211,29 @@ class OutfitPreparationResult:
             data["original_mask"] = str(self.original_mask_path)
         return data
 
-    def as_flux_payload(self) -> Dict[str, object]:
+    def as_flux_payload(self, *, combined: bool = True) -> Dict[str, object]:
         """Build a ready-to-send Azure Flux payload with base64 encoded assets."""
         def encode(path: Path) -> str:
             return base64.b64encode(path.read_bytes()).decode("utf-8")
 
+        if combined:
+            image_source = self.combined_image_path
+            mask_source = self.combined_mask_path
+        else:
+            image_source = self.original_image_path
+            mask_source = self.target_mask_path
+
         payload: Dict[str, object] = {
             "prompt": self.prompt,
             "negative_prompt": self.negative_prompt,
-            "image": encode(self.original_image_path),
-            "mask": encode(self.target_mask_path),
+            "image": encode(image_source),
+            "mask": encode(mask_source),
             "strength": round(self.strength, 4),
         }
-        if self.original_mask_path:
+
+        if not combined and self.original_mask_path:
             payload["original_mask"] = encode(self.original_mask_path)
+
         return payload
 
 @dataclass(slots=True)
@@ -214,6 +321,8 @@ class EnhancedOutfitTransferPipeline:
         device: Optional[str] = None,
         azure_flux_endpoint: Optional[str] = None,
         azure_flux_key: Optional[str] = None,
+        azure_flux_deployment: Optional[str] = None,
+        azure_flux_api_version: Optional[str] = None,
         deeplab_model_path: Optional[str] = None,
     ) -> None:
         self.azure_gpt_endpoint = (azure_gpt_endpoint or os.getenv("AZURE_GPT_ENDPOINT", "")).rstrip("/")
@@ -221,8 +330,20 @@ class EnhancedOutfitTransferPipeline:
         self.azure_gpt_deployment = azure_gpt_deployment or os.getenv("AZURE_GPT_DEPLOYMENT", "gpt-4o-mini")
         self.azure_gpt_api_version = azure_gpt_api_version or os.getenv("AZURE_GPT_API_VERSION", "2024-02-15-preview")
 
-        self.azure_flux_endpoint = (azure_flux_endpoint or os.getenv("AZURE_FLUX_KONTEXT_ENDPOINT", "")).rstrip("/")
-        self.azure_flux_key = azure_flux_key or os.getenv("AZURE_FLUX_KONTEXT_KEY")
+        flux_endpoint_env = (
+            azure_flux_endpoint
+            or os.getenv("AZURE_FLUX_ENDPOINT")
+            or os.getenv("AZURE_FLUX_KONTEXT_ENDPOINT")
+            or ""
+        )
+        self.azure_flux_endpoint = flux_endpoint_env.rstrip("/")
+        self.azure_flux_key = (
+            azure_flux_key
+            or os.getenv("AZURE_FLUX_API_KEY")
+            or os.getenv("AZURE_FLUX_KONTEXT_KEY")
+        )
+        self.azure_flux_deployment = azure_flux_deployment or os.getenv("AZURE_FLUX_DEPLOYMENT")
+        self.azure_flux_api_version = azure_flux_api_version or os.getenv("AZURE_FLUX_API_VERSION", "2024-12-01-preview")
 
         # GPT-Image-1 configuration for cloth swap
         self.use_gpt_image = use_gpt_image or os.getenv("ENABLE_AZURE_GPT_IMAGE", "false").lower() == "true"
@@ -741,45 +862,165 @@ class EnhancedOutfitTransferPipeline:
         if not self.azure_gpt_image_endpoint or not self.azure_gpt_image_key:
             raise RuntimeError("Azure GPT-Image-1 credentials are not configured for execution.")
 
-        # Encode images to base64
-        person_image_b64 = base64.b64encode(preparation.original_image_path.read_bytes()).decode("utf-8")
-        garment_image_b64 = base64.b64encode(preparation.clothes_image_path.read_bytes()).decode("utf-8")
+        combined_image = preparation.combined_image_path.read_bytes()
+        combined_mask = preparation.combined_mask_path.read_bytes()
 
         url = (
-            f"{self.azure_gpt_image_endpoint}/openai/deployments/{self.azure_gpt_image_deployment}/cloth-swap"
-            f"?api-version={self.azure_gpt_image_api_version}"
+            f"{self.azure_gpt_image_endpoint.rstrip('/')}"
+            f"/openai/deployments/{self.azure_gpt_image_deployment}/images/edits"
         )
-        
+        params = {"api-version": self.azure_gpt_image_api_version}
+
         gpt_prompt, gpt_negative_prompt = self._build_gpt_image_prompt_bundle(preparation)
+        if gpt_negative_prompt:
+            gpt_prompt = f"{gpt_prompt} Avoid: {gpt_negative_prompt}."
 
-        payload = {
-            "model": self.azure_gpt_image_deployment,
-            "person_image": person_image_b64,
-            "garment_image": garment_image_b64,
-            "prompt": gpt_prompt,
-            "negative_prompt": gpt_negative_prompt,
+        def _detect_mime(name: str, data: bytes) -> tuple[str, str]:
+            if name.endswith(".png") or data.startswith(b"\x89PNG\r\n\x1a\n"):
+                return name if name.endswith(".png") else f"{name}.png", "image/png"
+            if name.endswith(".jpg") or name.endswith(".jpeg") or data[:3] == b"\xff\xd8\xff":
+                base = name if name.endswith(".jpg") or name.endswith(".jpeg") else f"{name}.jpg"
+                return base, "image/jpeg"
+            if name.endswith(".bmp") or data[:2] == b"BM":
+                return name if name.endswith(".bmp") else f"{name}.bmp", "image/bmp"
+            if name.endswith(".gif") or data.startswith(b"GIF8"):
+                return name if name.endswith(".gif") else f"{name}.gif", "image/gif"
+            return f"{name}.bin", "application/octet-stream"
+
+        image_name = preparation.combined_image_path.name
+        image_filename, image_mime = _detect_mime(image_name, combined_image)
+
+        with Image.open(io.BytesIO(combined_mask)) as mask_image:
+            mask_gray = mask_image.convert("L")
+        mask_array = np.asarray(mask_gray, dtype=np.uint8)
+        alpha_array = np.where(mask_array > 127, 0, 255).astype(np.uint8)
+        mask_rgba = Image.new("RGBA", mask_gray.size, (255, 255, 255, 255))
+        mask_rgba.putalpha(Image.fromarray(alpha_array, mode="L"))
+        mask_buffer = io.BytesIO()
+        mask_rgba.save(mask_buffer, format="PNG")
+        mask_bytes = mask_buffer.getvalue()
+        mask_buffer.close()
+        mask_filename, mask_mime = "mask.png", "image/png"
+
+        headers = {"api-key": self.azure_gpt_image_key, "Accept": "application/json"}
+        files = {
+            "image": (image_filename, combined_image, image_mime),
+            "mask": (mask_filename, mask_bytes, mask_mime),
         }
+        data = {"prompt": gpt_prompt}
 
-        headers = {
-            "api-key": self.azure_gpt_image_key,
-            "Content-Type": "application/json",
+        print(f"🚀 Calling Azure GPT-Image-1 edits endpoint at {url}")
+        response = requests.post(url, headers=headers, params=params, data=data, files=files, timeout=120)
+
+        try:
+            response.raise_for_status()
+        except requests.HTTPError as exc:
+            detail = ""
+            try:
+                detail = f" Response: {exc.response.json()}"
+            except Exception:
+                if exc.response is not None:
+                    detail = f" Body: {exc.response.text}"
+            raise RuntimeError(f"Azure GPT-Image-1 request failed ({exc.response.status_code}).{detail}") from exc
+
+        result_json = response.json()
+        operation_url = response.headers.get("Operation-Location") or response.headers.get("Azure-AsyncOperation")
+        if operation_url:
+            if not operation_url.lower().startswith("http"):
+                operation_url = f"{self.azure_gpt_image_endpoint.rstrip('/')}/{operation_url.lstrip('/')}"
+
+            poll_interval = float(os.getenv("AZURE_GPT_IMAGE_POLL_INTERVAL", "2.0"))
+            max_attempts = int(os.getenv("AZURE_GPT_IMAGE_MAX_POLL_ATTEMPTS", "60"))
+            poll_headers = {"api-key": self.azure_gpt_image_key, "Accept": "application/json"}
+            poll_params = None if "api-version=" in operation_url else {"api-version": self.azure_gpt_image_api_version}
+
+            for attempt in range(max_attempts):
+                poll_response = requests.get(
+                    operation_url,
+                    headers=poll_headers,
+                    params=poll_params,
+                    timeout=120,
+                )
+                poll_response.raise_for_status()
+                result_json = poll_response.json()
+                status = str(result_json.get("status", "")).lower()
+                if status in {"succeeded", "success"}:
+                    break
+                if status in {"failed", "cancelled", "canceled"}:
+                    raise RuntimeError(f"Azure GPT-Image-1 operation failed with status '{status}': {result_json}")
+                time.sleep(poll_interval)
+            else:
+                raise TimeoutError(
+                    f"Azure GPT-Image-1 operation did not complete after {max_attempts} attempts."
+                )
+
+        def _extract_base64(payload: Dict[str, object]) -> tuple[str | None, Dict[str, object]]:
+            candidates = []
+            if isinstance(payload.get("data"), list) and payload["data"]:
+                first = payload["data"][0]
+                if isinstance(first, dict):
+                    candidates.append(first)
+            if isinstance(payload.get("result"), dict):
+                inner = payload["result"]
+                if isinstance(inner.get("data"), list) and inner["data"]:
+                    entry = inner["data"][0]
+                    if isinstance(entry, dict):
+                        candidates.append(entry)
+            if isinstance(payload.get("images"), list) and payload["images"]:
+                entry = payload["images"][0]
+                if isinstance(entry, dict):
+                    candidates.append(entry)
+            if isinstance(payload.get("result"), dict):
+                image_value = payload["result"].get("image")
+                if isinstance(image_value, (str, bytes)):
+                    candidates.append({"image": image_value})
+            flat_candidates = candidates + [payload]
+
+            for candidate in flat_candidates:
+                if not isinstance(candidate, dict):
+                    continue
+                if "b64_json" in candidate and candidate["b64_json"]:
+                    return candidate["b64_json"], candidate
+                if "image" in candidate and candidate["image"]:
+                    return candidate["image"], candidate
+                if "image_base64" in candidate and candidate["image_base64"]:
+                    return candidate["image_base64"], candidate
+            return None, payload
+
+        image_b64, _source = _extract_base64(result_json)
+        if not image_b64:
+            raise RuntimeError(f"Azure GPT-Image-1 response missing image data: {result_json}")
+
+        try:
+            image_bytes = base64.b64decode(image_b64)
+        except Exception as exc:
+            raise RuntimeError(f"Failed to decode GPT-Image-1 output: {exc}") from exc
+
+        def _redact_images(node: object) -> object:
+            if isinstance(node, dict):
+                cleaned: Dict[str, object] = {}
+                for key, value in node.items():
+                    if key in {"b64_json", "image", "image_base64"} and isinstance(value, (str, bytes)):
+                        cleaned[key] = "<omitted>"
+                    else:
+                        cleaned[key] = _redact_images(value)
+                return cleaned
+            if isinstance(node, list):
+                return [_redact_images(item) for item in node]
+            return node
+
+        sanitized_response = _redact_images(result_json)
+
+        output_dir = preparation.target_mask_path.parent
+        output_path = output_dir / "output_gpt_image.png"
+        output_path.write_bytes(image_bytes)
+        print(f"✓ GPT-Image-1 output saved to {output_path}")
+
+        return {
+            "status": result_json.get("status", "succeeded"),
+            "saved_files": {"output_image": str(output_path)},
+            "response": sanitized_response,
         }
-        
-        print(f"🚀 Calling Azure GPT-Image-1 cloth swap API at {url}")
-        response = requests.post(url, headers=headers, json=payload, timeout=120)
-        response.raise_for_status()
-        result = response.json()
-
-        # Extract and save image
-        image_b64 = result.get("image") or result.get("b64_json")
-        if image_b64:
-            output_dir = preparation.target_mask_path.parent
-            output_path = output_dir / "output_gpt_image.jpg"
-            output_path.write_bytes(base64.b64decode(image_b64))
-            result.setdefault("saved_files", {})["output_image"] = str(output_path)
-            print(f"✓ GPT-Image-1 output saved to {output_path}")
-
-        return result
 
     def call_azure_flux_api(
         self,
@@ -821,22 +1062,120 @@ class EnhancedOutfitTransferPipeline:
         if not self.azure_flux_endpoint or not self.azure_flux_key:
             raise RuntimeError("Azure Flux credentials are not configured for execution.")
 
-        url = self.azure_flux_endpoint.rstrip("/") + "/images:generate"
+        endpoint = self.azure_flux_endpoint.rstrip("/")
+        params: Dict[str, str] = {}
+        if "openai/deployments" in endpoint and "/images/" in endpoint:
+            url = endpoint
+            if "api-version=" not in endpoint and self.azure_flux_api_version:
+                params["api-version"] = self.azure_flux_api_version
+        else:
+            if not self.azure_flux_deployment:
+                raise RuntimeError(
+                    "Azure Flux deployment name is required when AZURE_FLUX_ENDPOINT does not include it."
+                )
+            url = (
+                f"{endpoint}/openai/deployments/{self.azure_flux_deployment}/images/generations"
+            )
+            if self.azure_flux_api_version:
+                params["api-version"] = self.azure_flux_api_version
+
         headers = {
             "api-key": self.azure_flux_key,
             "Content-Type": "application/json",
         }
+        if self.azure_flux_deployment:
+            payload.setdefault("model", self.azure_flux_deployment)
         print(f"🚀 Calling Azure Flux Kontext API at {url}")
-        response = requests.post(url, headers=headers, json=payload, timeout=120)
+        response = requests.post(
+            url,
+            headers=headers,
+            json=payload,
+            params=params or None,
+            timeout=120,
+        )
         response.raise_for_status()
         result = response.json()
 
-        if "image_base64" in result:
+        operation_url = (
+            response.headers.get("Operation-Location")
+            or response.headers.get("operation-location")
+            or response.headers.get("Azure-AsyncOperation")
+        )
+        if operation_url:
+            if not operation_url.lower().startswith("http"):
+                operation_url = f"{self.azure_flux_endpoint.rstrip('/')}/{operation_url.lstrip('/')}"
+            poll_headers = {"api-key": self.azure_flux_key, "Accept": "application/json"}
+            poll_params = None if "api-version=" in operation_url else params or {"api-version": self.azure_flux_api_version}
+            poll_interval = float(os.getenv("AZURE_FLUX_POLL_INTERVAL", "2.0"))
+            max_attempts = int(os.getenv("AZURE_FLUX_MAX_POLL_ATTEMPTS", "60"))
+            for attempt in range(max_attempts):
+                poll_response = requests.get(
+                    operation_url,
+                    headers=poll_headers,
+                    params=poll_params,
+                    timeout=120,
+                )
+                poll_response.raise_for_status()
+                result = poll_response.json()
+                status = str(result.get("status", "")).lower()
+                if status in {"succeeded", "success"}:
+                    break
+                if status in {"failed", "cancelled", "canceled"}:
+                    raise RuntimeError(f"Azure Flux operation failed with status '{status}': {result}")
+                time.sleep(poll_interval)
+            else:
+                raise TimeoutError("Azure Flux operation did not complete within the allotted attempts.")
+
+        def _extract_flux_base64(payload: Dict[str, object]) -> tuple[str | None, Dict[str, object]]:
+            candidates = []
+            if isinstance(payload.get("data"), list) and payload["data"]:
+                first = payload["data"][0]
+                if isinstance(first, dict):
+                    candidates.append(first)
+            if isinstance(payload.get("result"), dict):
+                inner = payload["result"]
+                if isinstance(inner.get("data"), list) and inner["data"]:
+                    entry = inner["data"][0]
+                    if isinstance(entry, dict):
+                        candidates.append(entry)
+            if isinstance(payload.get("images"), list) and payload["images"]:
+                entry = payload["images"][0]
+                if isinstance(entry, dict):
+                    candidates.append(entry)
+            if "image_base64" in payload and payload["image_base64"]:
+                candidates.append({"image_base64": payload["image_base64"]})
+            flat_candidates = candidates + [payload]
+            for candidate in flat_candidates:
+                if not isinstance(candidate, dict):
+                    continue
+                if candidate.get("b64_json"):
+                    return candidate["b64_json"], candidate
+                if candidate.get("image_base64"):
+                    return candidate["image_base64"], candidate
+                if candidate.get("image"):
+                    return candidate["image"], candidate
+            return None, payload
+
+        image_b64, _source = _extract_flux_base64(result)
+        if image_b64:
+            try:
+                image_bytes = base64.b64decode(image_b64)
+            except Exception as exc:
+                raise RuntimeError(f"Failed to decode Azure Flux image data: {exc}") from exc
             output_dir = preparation.target_mask_path.parent
-            output_path = output_dir / "output.jpg"
-            output_path.write_bytes(base64.b64decode(result["image_base64"]))
-            result.setdefault("saved_files", {})["output_image"] = str(output_path)
+            final_bytes, raw_bytes = preparation.compose_flux_output(image_bytes)
+            raw_path = output_dir / "output_flux_raw.png"
+            raw_path.write_bytes(raw_bytes)
+
+            output_path = output_dir / "output_flux.png"
+            output_path.write_bytes(final_bytes)
+
+            saved_files = result.setdefault("saved_files", {})
+            saved_files["output_image"] = str(output_path)
+            saved_files["output_image_raw"] = str(raw_path)
             print(f"✓ Output image saved to {output_path}")
+        else:
+            print("⚠️  Azure Flux response did not include image data.")
 
         return result
 
@@ -1328,6 +1667,7 @@ class EnhancedOutfitTransferPipeline:
             " Only swap the clothing worn by the existing person with this garment description: "
             f"{garment_description}{slot_text}"
             " Ensure the garment follows the body contours naturally and blend seams cleanly."
+            " Fill the entire masked area with the garment fabric so no blank, transparent, or white regions remain."
             " Do not add accessories unless required by the garment."
         )
 
@@ -1337,7 +1677,11 @@ class EnhancedOutfitTransferPipeline:
             "cropped composition, zoomed in, zoomed out, regenerated scene, displaced subject, floating clothes, garment disconnected, artifacts, text, watermark"
         )
 
-        negative_parts = [preservation_guards]
+        fill_guards = (
+            "white patch, empty fabric, incomplete garment, transparent cloth, unfilled mask, missing garment coverage, blank clothing area"
+        )
+
+        negative_parts = [preservation_guards, fill_guards]
         if preparation.negative_prompt:
             negative_parts.append(preparation.negative_prompt)
 
@@ -1368,6 +1712,7 @@ class EnhancedOutfitTransferPipeline:
             f"Only replace the clothing in the masked area with: {description}. "
             f"Details: {fine_details}. "
             f"The clothing should fit naturally on this specific person. "
+            f"Completely fill the masked region with the garment so there are no blank, transparent, or white patches. "
             f"{orientation_instruction} "
             f"Maintain the original photo framing and show the full person. {slot_phrase}"
         )
@@ -1386,7 +1731,8 @@ class EnhancedOutfitTransferPipeline:
             "wrong gender, age change, child to adult, adult to child, "
             "changing non-masked areas, modifying unmasked regions, full body clothing change, "
             "reframing, different composition, altered framing, zooming, "
-            "blurry, low quality, unrealistic, artificial, cartoon, illustration"
+            "blurry, low quality, unrealistic, artificial, cartoon, illustration, "
+            "white patch, empty fabric, incomplete garment, transparent cloth, unfilled mask, missing garment coverage, blank clothing area"
         )
 
         print("   ✓ Prompt prepared.")
@@ -1478,6 +1824,28 @@ class EnhancedOutfitTransferPipeline:
                 "to stabilise Azure preprocessing."
             )
 
+        total_offset = (offset_x + person_offset_x, offset_y + person_offset_y)
+
+        max_canvas = int(os.getenv("OUTFIT_COMBINED_MAX_SIZE", "2048"))
+        if max_canvas < 256:
+            max_canvas = 256
+        if max(combined_rgb.size) > max_canvas:
+            scale = max_canvas / float(max(combined_rgb.size))
+            new_size = (
+                max(1, int(round(combined_rgb.width * scale))),
+                max(1, int(round(combined_rgb.height * scale))),
+            )
+            combined_rgb = combined_rgb.resize(new_size, LANCZOS)
+            combined_mask = combined_mask.resize(new_size, Image.NEAREST)
+            total_offset = (
+                int(round(total_offset[0] * scale)),
+                int(round(total_offset[1] * scale)),
+            )
+            print(
+                f"   ✓ Scaled combined panel to {new_size[0]}x{new_size[1]} "
+                f"(max {max_canvas}) to satisfy Azure limits."
+            )
+
         combined_rgb.save(combined_image_path)
         combined_mask.save(combined_mask_path)
 
@@ -1485,7 +1853,6 @@ class EnhancedOutfitTransferPipeline:
         print(f"   ✓ Combined image saved to {combined_image_path}")
         print(f"   ✓ Combined mask saved to {combined_mask_path}")
 
-        total_offset = (offset_x + person_offset_x, offset_y + person_offset_y)
         return combined_rgb.size, total_offset
 
     # ------------------------------------------------------------------

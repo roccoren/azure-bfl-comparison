@@ -10,6 +10,7 @@ This project compares image outputs from Microsoft Azure Flux API and the offici
 - Persist generated images and metadata for side-by-side evaluation.
 - Rich console progress display and retry logic.
 - Output storage grouped by batch name and provider with JSON metadata.
+- Manual outfit swap CLI that reuses the enhanced pipeline with a user-supplied mask.
 
 ## Quickstart
 
@@ -31,6 +32,58 @@ This project compares image outputs from Microsoft Azure Flux API and the offici
    ```
 
 Outputs are saved to `output/` with timestamped folders for each provider.
+
+## Manual outfit swap with a provided mask
+
+When you already have an inpainting mask for the target person, you can reuse the enhanced
+pipeline without running any automatic mask generation. The helper script below prepares the
+combined panel, prompts, and (optionally) submits the request to Azure Flux:
+
+```bash
+python scripts/outfit_swap_with_mask.py \
+  --original path/to/person.jpg \
+  --mask path/to/person_mask.png \
+  --clothes path/to/garment.jpg \
+  --task-name sample_swap \
+  --execute
+```
+
+- Drop `--execute` for a dry run that only writes the intermediate artifacts under
+  `output/manual_outfit/sample_swap/`.
+- The script automatically loads `.env` from the project root when present; pass `--dotenv`
+  to point at a different credentials file.
+- Supply `--strength` to override the computed inpainting strength or `--seed` to make the
+  Azure Flux call deterministic.
+- Execution respects the feature flags: set `ENABLE_AZURE_FLUX=false` and
+  `ENABLE_AZURE_GPT_IMAGE=true` to call GPT-Image-1 directly.
+- Prefer batching? Point `scripts/run_batch.py` at a JSON task file that includes both
+  `image_path` and `mask_path`. See [`examples/outfit_swap_with_masks.json`](examples/outfit_swap_with_masks.json)
+  for a template. With `ENABLE_AZURE_GPT_IMAGE=true`, the runner will reuse the
+  provided mask and call GPT-Image-1 for each task.
+
+### Batch outfit swap via JSON
+
+To batch multiple swaps, add tasks to a JSON definition (see `examples/outfit_swap_try_on.json`).
+Each task should specify:
+
+- `image_path`: original person photo
+- `mask_path`: binary/white mask covering only the garment region
+- `outfit.clothes_image_path`: reference garment
+
+Then run:
+
+```bash
+python scripts/run_batch.py examples/outfit_swap_try_on.json --batch-name try_on --dotenv .env
+```
+
+For datasets that already include hand-crafted masks, you can reuse the manual CLI via the helper runner:
+
+```bash
+python scripts/run_outfit_swap_with_masks.py examples/outfit_swap_with_masks.json --execute --dotenv .env
+```
+
+Set `ENABLE_AZURE_FLUX=false` and `ENABLE_AZURE_GPT_IMAGE=true` in `.env` to route calls to GPT-Image-1; the runner
+will convert supplied masks to transparent regions so the model only edits the white area.
 
 ## Configuration
 
