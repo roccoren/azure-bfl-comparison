@@ -31,6 +31,7 @@ class CombinedAssets:
     combined_mask_path: Path
     combined_size: Tuple[int, int]
     person_region: Tuple[int, int, int, int]
+    person_ratio: Tuple[float, float, float, float]
     original_size: Tuple[int, int]
 
 
@@ -276,11 +277,17 @@ def create_combined_assets(
     crop_width = max(1, right - clip_x)
     crop_height = max(1, bottom - clip_y)
 
+    ratio_left = clip_x / combined_width if combined_width else 0.0
+    ratio_top = clip_y / combined_height if combined_height else 0.0
+    ratio_width = crop_width / combined_width if combined_width else 1.0
+    ratio_height = crop_height / combined_height if combined_height else 1.0
+
     return CombinedAssets(
         combined_image_path=combined_image_path,
         combined_mask_path=combined_mask_path,
         combined_size=(combined_width, combined_height),
         person_region=(clip_x, clip_y, crop_width, crop_height),
+        person_ratio=(ratio_left, ratio_top, ratio_width, ratio_height),
         original_size=(person_rgb.width, person_rgb.height),
     )
 
@@ -503,16 +510,33 @@ def main() -> None:
 
     with Image.open(BytesIO(result.image_bytes)) as panel_image:
         panel_rgb = panel_image.convert("RGB")
-        if panel_rgb.size != assets.combined_size:
-            panel_rgb = panel_rgb.resize(assets.combined_size, _LANCZOS)
+
+        ratio_left, ratio_top, ratio_width, ratio_height = assets.person_ratio
+        panel_width, panel_height = panel_rgb.size
+
+        px = int(round(ratio_left * panel_width))
+        py = int(round(ratio_top * panel_height))
+        pw = max(1, int(round(ratio_width * panel_width)))
+        ph = max(1, int(round(ratio_height * panel_height)))
+
+        if px + pw > panel_width:
+            pw = panel_width - px
+        if py + ph > panel_height:
+            ph = panel_height - py
+
+        crop_box = (px, py, px + pw, py + ph)
+        cropped_rgb = panel_rgb.crop(crop_box)
+
+        if cropped_rgb.size != assets.original_size:
+            cropped_rgb = cropped_rgb.resize(assets.original_size, _LANCZOS)
 
         with BytesIO() as buffer:
-            panel_rgb.save(buffer, format="PNG")
+            cropped_rgb.save(buffer, format="PNG")
             cropped_bytes = buffer.getvalue()
 
     output_image_path = output_dir / "output_flux.png"
     output_image_path.write_bytes(cropped_bytes)
-    print(f"✓ Flux panel saved to {output_image_path}")
+    print(f"✓ Cropped outfit swap saved to {output_image_path}")
     print(f"  Raw panel preserved at {raw_panel_path}")
 
     metadata_path = output_dir / "flux_metadata.json"
@@ -527,7 +551,19 @@ def main() -> None:
         "width": assets.person_region[2],
         "height": assets.person_region[3],
     }
+    metadata["person_ratio"] = {
+        "left": assets.person_ratio[0],
+        "top": assets.person_ratio[1],
+        "width": assets.person_ratio[2],
+        "height": assets.person_ratio[3],
+    }
     metadata["original_size"] = {"width": assets.original_size[0], "height": assets.original_size[1]}
+    metadata["final_crop_box"] = {
+        "left": crop_box[0],
+        "top": crop_box[1],
+        "right": crop_box[2],
+        "bottom": crop_box[3],
+    }
     metadata["raw_panel"] = str(raw_panel_path)
     metadata_path.write_text(json.dumps(metadata, indent=2))
     print(f"  Metadata stored at {metadata_path}")
