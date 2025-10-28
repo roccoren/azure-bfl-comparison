@@ -1,0 +1,110 @@
+{
+      "name": "image2",
+      "image_path": "images/sky/image2.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image3",
+      "image_path": "images/sky/image3.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image4",
+      "image_path": "images/sky/image4.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image5",
+      "image_path": "images/sky/image5.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image6",
+      "image_path": "images/sky/image6.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image7",
+      "image_path": "images/sky/image7.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image8",
+      "image_path": "images/sky/image8.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image9",
+      "image_path": "images/sky/image9.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image10",
+      "image_path": "images/sky/image10.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image11",
+      "image_path": "images/sky/image11.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },
+    {
+      "name": "image12",
+      "image_path": "images/sky/image12.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        }
+      }
+    },

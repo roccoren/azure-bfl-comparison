@@ -1,0 +1,2662 @@
+[
+  {
+    "name": "image233-smiling",
+    "payload": {
+      "prompt": "Modify the image so that the girl is smiling. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adjusting the facial expression to show a natural and pleasant smile.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image233.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image148-holding",
+    "payload": {
+      "prompt": "Modify the image so that the person holding fresh flowers remains the main subject. Keep the original composition, lighting, and background unchanged, enhancing the clarity and vibrancy of the flowers to make them stand out naturally.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image148.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image46-walking",
+    "payload": {
+      "prompt": "Modify the image so that a girl is walking by the seaside. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while enhancing the scene to clearly show the girl strolling along the beach in a natural and realistic manner.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image46.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image134-looking",
+    "payload": {
+      "prompt": "Modify the image to show the girl looking back over her shoulder with a smile. Keep the original lighting, background, and details unchanged, focusing on capturing a natural and warm expression on her face.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image134.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image224-young",
+    "payload": {
+      "prompt": "Modify the image to depict a young woman wearing a traditional qipao dress, holding a round fan, standing by the lakeside. Maintain the original photo’s perspective, lighting, and surrounding elements unchanged, while enhancing the details of her attire and the serene lakeside environment to look natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image224.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image72-sitting",
+    "payload": {
+      "prompt": "Modify the image to show a girl sitting in a library reading a book, with a computer placed on the desk beside her. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding the girl, the book, and the computer in a natural and realistic manner.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image72.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image189-running",
+    "payload": {
+      "prompt": "Modify the image so that a person is running on a city street. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while emphasizing the dynamic motion and urban environment to create a realistic and lively scene.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image189.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image32-act",
+    "payload": {
+      "prompt": "Modify the image so that the boy is in the act of shooting a goal. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while realistically depicting the boy’s motion and posture as he kicks the ball towards the goal.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image32.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image25-little",
+    "payload": {
+      "prompt": "Modify the image so that the little girl is running inside an ancient Greek architectural setting. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding authentic ancient Greek architectural details such as columns, stone structures, and classical design elements that look realistic and natural.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image25.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image42-dancing",
+    "payload": {
+      "prompt": "Modify the image so that the girl is dancing energetically in an African desert tribe setting. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding authentic tribal attire, desert background, and dynamic movement to the girl, making the scene lively and culturally rich.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image42.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image201-wedding",
+    "payload": {
+      "prompt": "Modify the image so that the bride and groom at the wedding are wearing Western-style formal attire. Keep the main subjects unchanged, preserving their poses, expressions, and the overall composition of the photo.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image201.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image195-three",
+    "payload": {
+      "prompt": "Modify the image so that it shows a family photo of three people, with the father standing next to the mother. Keep the background unchanged, preserving the original perspective, lighting, and surrounding elements.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image195.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image24-behind",
+    "payload": {
+      "prompt": "Modify the image so that behind this couple is a sea at sunset, with seagulls flying over the water. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while enhancing the warm colors of the sunset and the natural movement of the seagulls to create a realistic and romantic atmosphere.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image24.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image140-wedding",
+    "payload": {
+      "prompt": "Modify the image to create a wedding certificate photo for this couple. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding realistic and formal elements of a wedding certificate, such as official stamps, signatures, and decorative borders, to make it look authentic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image140.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image61-replaced",
+    "payload": {
+      "prompt": "Modify the image so that the background is replaced with a desert under moonlight. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating a realistic moonlit desert scene in the background.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image61.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image183-mans",
+    "payload": {
+      "prompt": "Modify the image so that the man's shirt is changed to white. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the new white shirt looks natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image183.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image19-replaced",
+    "payload": {
+      "prompt": "Modify the image so that the background is replaced with a dense forest. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating the lush, green forest to create a natural and realistic environment.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image19.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image54-replaced",
+    "payload": {
+      "prompt": "Modify the image so that the background is replaced with the Eiffel Tower. Keep the original photo’s perspective, lighting, and foreground elements unchanged, ensuring the new background looks natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image54.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image219-wearing",
+    "payload": {
+      "prompt": "Modify the image so that the baby is wearing shoes. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding realistic and appropriately sized shoes to the baby's feet.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image219.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image145-skin",
+    "payload": {
+      "prompt": "Modify the image to make the skin on the person's fingers appear fairer, lengthen the hair, and further soften the areas around the corners of the mouth and eyes. Maintain the original lighting, perspective, and surrounding elements to keep the image natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image145.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image44-behind",
+    "payload": {
+      "prompt": "Modify the image so that the background behind the girl is replaced with a grassy meadow at the foot of the mountain. Keep the original photo’s perspective, lighting, and the girl’s appearance unchanged, ensuring the new background looks natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image44.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image35-replaced",
+    "payload": {
+      "prompt": "Modify the image so that the background is replaced with the Eiffel Tower during sunset. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating the warm, golden hues of the sunset around the Eiffel Tower to create a natural and realistic scene.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image35.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image251-strands",
+    "payload": {
+      "prompt": "Modify the image to remove the strands of hair that are covering the face. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while making the face clearly visible and unobstructed.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image251.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image176-blurred",
+    "payload": {
+      "prompt": "Modify the image so that the background is blurred, creating a soft and out-of-focus effect. Keep the main subject sharp and clear, preserving the original lighting and colors for a natural look.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image176.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image28-replaced",
+    "payload": {
+      "prompt": "Modify the image so that the background is replaced with Paris Disneyland, removing all pedestrians. Keep the original photo’s perspective, lighting, and main subjects unchanged, ensuring the new background blends naturally and realistically with the existing elements.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image28.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image160-base",
+    "payload": {
+      "prompt": "Modify the image so that the background base color is changed to Morandi blue. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current background color with a soft, muted Morandi blue tone that looks natural and harmonious.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image160.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image57-replaced",
+    "payload": {
+      "prompt": "Modify the image so that the background is replaced with a lawn covered in blooming flowers. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating a vibrant and natural flower-filled grassy background that looks realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image57.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image230-replaced",
+    "payload": {
+      "prompt": "Modify the image so that the background is replaced with a traditional Chinese gongbi painting style background. Keep the original photo’s main subjects, perspective, and lighting unchanged, while seamlessly integrating the detailed and delicate gongbi art background to create a harmonious and realistic composition.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image230.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image146-eye",
+    "payload": {
+      "prompt": "Modify the image so that the eye pupils of the person in the photo are changed to a natural brown color. Keep the original lighting, facial features, and surrounding elements unchanged to maintain realism.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image146.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image215-flower",
+    "payload": {
+      "prompt": "Modify the image to remove the flower crown from the girl's head. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the removal looks natural and seamless.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image215.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image135-accessory",
+    "payload": {
+      "prompt": "Modify the image to remove the accessory on the girl's nose. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the removal looks natural and seamless.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image135.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image153-womans",
+    "payload": {
+      "prompt": "Modify the image so that the woman's clothing is replaced with a traditional qipao dress. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the new outfit looks natural and fits seamlessly with the scene.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image153.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image202-hair",
+    "payload": {
+      "prompt": "Modify the image by adding a hair clip to the girl's hair. Keep the original lighting, perspective, and surrounding elements unchanged, ensuring the hair clip looks natural and well-integrated.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image202.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image149-bracelet",
+    "payload": {
+      "prompt": "Modify the image to remove the bracelet from the woman's arm. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the arm looks natural and unaltered except for the absence of the bracelet.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image149.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image136-large",
+    "payload": {
+      "prompt": "Modify the image by adding a large gold chain necklace to the man on the left. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the gold chain looks realistic and naturally fits the man's posture and style.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image136.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image173-mother",
+    "payload": {
+      "prompt": "Modify the image so that the mother’s hairstyle is changed to a traditional Chinese bun. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current hairstyle with an elegant and authentic Chinese-style bun that looks natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image173.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image203-butterfly",
+    "payload": {
+      "prompt": "Modify the image to remove the butterfly pattern from the little girl's clothes. Keep the original texture, color, and lighting of the clothes unchanged, ensuring a natural and seamless appearance where the butterfly pattern was removed.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image203.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image185-taller",
+    "payload": {
+      "prompt": "Modify the image so that the woman is taller, approximately half a head shorter than the man beside her. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adjusting the woman's height realistically to match this description.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image185.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image216-hat",
+    "payload": {
+      "prompt": "Modify the image to remove the hat from the elderly person's head. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the removal looks natural and seamless.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image216.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image166-grass",
+    "payload": {
+      "prompt": "Modify the image so that the grass in the basin on top of the woman on the right is replaced with fruit. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while making the fruit look natural and realistic within the basin.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image166.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image170-walking",
+    "payload": {
+      "prompt": "Modify the image to show the girl walking the dog. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding a natural and realistic scene of the girl holding the dog's leash and walking together.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image170.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image237-indoors",
+    "payload": {
+      "prompt": "Modify the image so that the girl is indoors, petting a cat. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while changing the setting to an indoor environment where the girl is gently interacting with a cat in a natural and realistic manner.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image237.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image211-both",
+    "payload": {
+      "prompt": "Modify the image so that both the kitten and the puppy are dressed in clothes. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding realistic and fitting outfits to the animals that enhance their appearance naturally.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image211.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image190-branch",
+    "payload": {
+      "prompt": "Modify the image so that the branch in the dog's mouth is replaced with a small ball. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the new object looks natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image190.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image231-dogs",
+    "payload": {
+      "prompt": "Modify the image so that the dog's harness is replaced with a T-shirt. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while making the T-shirt look natural and fitting on the dog.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image231.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image209-small",
+    "payload": {
+      "prompt": "Modify the image to add a small harness on the dog. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating the harness so it looks natural and fits the dog comfortably.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image209.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image249-vest",
+    "payload": {
+      "prompt": "Modify the image by adding a vest to the small dog. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the vest fits naturally and looks realistic on the dog.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image249.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image186-dogs",
+    "payload": {
+      "prompt": "Modify the image so that the dog's fur appears smoother and silkier. Maintain the original lighting, colors, and background elements unchanged, enhancing only the texture and appearance of the fur to look natural and soft.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image186.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image150-wrinkles",
+    "payload": {
+      "prompt": "Modify the image to remove the wrinkles and creases on the small dog’s body. Keep the original lighting, texture, and surrounding elements unchanged, ensuring the dog’s fur looks smooth and natural.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image150.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image199-dogs",
+    "payload": {
+      "prompt": "Modify the image so that the dog's clothing is changed to pink. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current clothing with a natural-looking pink outfit that fits the dog realistically.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image199.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image158-purple",
+    "payload": {
+      "prompt": "Modify the image by adding a purple hat to the small dog. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the hat looks naturally placed and realistic on the dog.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image158.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image247-clothes",
+    "payload": {
+      "prompt": "Modify the image so that the clothes on the small dog are changed into a little skirt. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while realistically transforming the dog's outfit into a cute skirt.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image247.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image212-traffic",
+    "payload": {
+      "prompt": "Modify the image to add a traffic uniform to the small dog. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while realistically dressing the dog in a detailed and fitting traffic uniform.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image212.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image217-bell",
+    "payload": {
+      "prompt": "Modify the image to remove the bell collar from the kitten's neck. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the kitten looks natural and the area around the neck appears seamless and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image217.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image252-orange",
+    "payload": {
+      "prompt": "Modify the image so that the orange on the kitten's head is replaced with an orange hat. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the new hat looks natural and fits well on the kitten's head.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image252.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image151-kitten",
+    "payload": {
+      "prompt": "Modify the image so that the kitten has a wink expression. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while changing the kitten’s facial expression to a playful wink that looks natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image151.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image187-giant",
+    "payload": {
+      "prompt": "Modify the image so that the giant panda is holding bamboo. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding the bamboo naturally into the panda's embrace, making it look realistic and harmonious with the scene.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image187.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image154-pine",
+    "payload": {
+      "prompt": "Modify the image so that a pine cone is added to the squirrel's hand. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the pine cone looks natural and seamlessly integrated with the squirrel's hand.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image154.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image180-vest",
+    "payload": {
+      "prompt": "Modify the image by adding a vest to the little monkey. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating the vest onto the monkey to look natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image180.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image188-small",
+    "payload": {
+      "prompt": "Modify the image by adding a small hat to the little duck. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the hat looks natural and fits well on the duck.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image188.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image161-reflections",
+    "payload": {
+      "prompt": "Modify the image to remove the reflections on the water surface. Keep the original perspective, lighting, and surrounding elements unchanged, ensuring the water appears clear and natural without any reflective glare.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image161.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image253-ground",
+    "payload": {
+      "prompt": "Modify the image so that the ground is transformed into a lush green surface. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current ground with natural, vibrant green grass or vegetation that looks realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image253.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image225-all",
+    "payload": {
+      "prompt": "Modify the image to remove all grass from the desert area. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the desert appears natural and barren without any vegetation.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image225.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image137-clouds",
+    "payload": {
+      "prompt": "Modify the image to remove the clouds that are obstructing the view of the mountains. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while making the mountains fully visible and clear.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image137.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image147-flower",
+    "payload": {
+      "prompt": "Modify the image so that the flower buds at the top bloom fully. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while enhancing the buds to appear vibrant and naturally blossomed.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image147.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image141-wilted",
+    "payload": {
+      "prompt": "Modify the image so that the wilted flowers are replaced with fresh, blooming flowers. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while enhancing the flowers to look vibrant and lively, with natural colors and realistic details.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image141.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image238-several",
+    "payload": {
+      "prompt": "Modify the image by adding several coconuts to the tree. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the coconuts look natural and realistic on the tree.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image238.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image181-lotus",
+    "payload": {
+      "prompt": "Modify the image by adding a lotus flower on the water surface. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating the lotus flower so it looks natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image181.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image240-extra",
+    "payload": {
+      "prompt": "Modify the image to remove the extra leaves on the right side. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the edited area blends naturally with the rest of the image.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image240.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image162-color",
+    "payload": {
+      "prompt": "Modify the image to make the background color brighter while maintaining the original composition, lighting, and details. Enhance the brightness subtly to keep the natural look and feel of the image.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image162.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image182-changed",
+    "payload": {
+      "prompt": "Modify the image so that the background is changed to a winter snowy landscape. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current background with a realistic snow-covered scene that evokes a cold winter atmosphere.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image182.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image177-night",
+    "payload": {
+      "prompt": "Modify the image so that the background is a night sky filled with stars. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current background with a realistic, starry night sky.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image177.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image254-some",
+    "payload": {
+      "prompt": "Modify the image to add some lotus flowers in the water. Keep the original reflections, lighting, and water texture unchanged, while seamlessly integrating the lotus flowers so they appear natural and harmonious with the existing scene.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image254.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image155-transformed",
+    "payload": {
+      "prompt": "Modify the image so that the background is transformed into a sunset scene. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current background with warm, golden hues and the characteristic colors of a sunset that look natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image155.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image255-light",
+    "payload": {
+      "prompt": "Modify the image so that the background shows light rain falling gently. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding a realistic effect of small raindrops and a slightly overcast atmosphere.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image255.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image204-traditional",
+    "payload": {
+      "prompt": "Modify the image by adding traditional Chinese ink wash paintings on the building's walls. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating the delicate and artistic ink wash style onto the wall surfaces to enhance the cultural atmosphere.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image204.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image213-tone",
+    "payload": {
+      "prompt": "Modify the image to make the overall tone brighter. Keep the original composition, lighting, and details intact while enhancing the brightness and vibrancy of the colors to create a lighter and more vivid appearance.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image213.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image256-walls",
+    "payload": {
+      "prompt": "Modify the image so that the walls of the building are changed to a pink color. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while making the pink walls look natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image256.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image222-reflections",
+    "payload": {
+      "prompt": "Modify the image to remove the reflections on the buildings. Keep the original perspective, lighting, and surrounding elements unchanged, ensuring the buildings appear clear and free of any reflective distortions.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image222.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image241-buildings",
+    "payload": {
+      "prompt": "Modify the image so that the building's color changes to a golden hue. Keep the original lighting, shadows, and surrounding elements unchanged, ensuring the golden color looks natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image241.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image234-tom",
+    "payload": {
+      "prompt": "Modify the image so that Tom Cat is holding Jerry Mouse in his hand. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while realistically adding Jerry Mouse being grasped by Tom Cat.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image234.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image171-nezha",
+    "payload": {
+      "prompt": "Modify the image so that Nezha is sitting on a cloud. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while adding a realistic and detailed depiction of Nezha comfortably seated on a fluffy cloud.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image171.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image226-conan",
+    "payload": {
+      "prompt": "Modify the image so that Conan is squatting on the ground. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while realistically integrating Conan in a natural pose on the floor.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image226.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image142-character",
+    "payload": {
+      "prompt": "Modify the image so that the character is transformed into Sailor Moon's Sailor Mercury. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while changing the character's appearance to match Sailor Mercury's iconic look, including her blue sailor outfit, short blue hair, and accessories, ensuring a natural and realistic integration.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image142.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image205-resemble",
+    "payload": {
+      "prompt": "Modify the image to resemble Vermeer's Girl with a Pearl Earring. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while transforming the subject's appearance, clothing, and background to match the style and details of the famous painting, ensuring a realistic and artistic effect.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image205.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image228-rope",
+    "payload": {
+      "prompt": "Modify the image by adding a rope ladder to the landing skids of the helicopter. Keep the original perspective, lighting, and surrounding elements unchanged, ensuring the rope ladder looks naturally integrated and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image228.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image138-red",
+    "payload": {
+      "prompt": "Modify the image by adding a red flag fluttering on the pole at the top of the boat. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the flag looks natural and realistically integrated into the scene.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image138.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image184-colors",
+    "payload": {
+      "prompt": "Modify the image to make the overall colors brighter and more vivid. Keep the original composition, lighting, and details intact while enhancing the brightness and saturation to create a more lively and vibrant appearance.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image184.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image167-sushi",
+    "payload": {
+      "prompt": "Modify the image so that the sushi pieces are arranged neatly in a straight row. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while ensuring the sushi alignment looks natural and orderly.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image167.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image214-tripe",
+    "payload": {
+      "prompt": "Modify the image so that the tripe in the plate below is replaced with kelp. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while realistically integrating the kelp in place of the tripe.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image214.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image163-some",
+    "payload": {
+      "prompt": "Modify the image by adding some red and green chili peppers into the pot. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while realistically integrating the colorful chili peppers into the scene.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image163.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image196-more",
+    "payload": {
+      "prompt": "Modify the image by adding more skewers of meat on the grill. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while enhancing the grill area with additional skewers that look fresh and appetizing.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image196.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image229-dumplings",
+    "payload": {
+      "prompt": "Modify the image so that the dumplings in the spoon are replaced with pieces of chicken. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while making the chicken pieces look natural and realistic within the spoon.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image229.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image168-hat",
+    "payload": {
+      "prompt": "Modify the image so that the hat on the small cake is replaced with a small crown. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the new crown looks natural and fits well on the cake.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image168.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image178-cilantro",
+    "payload": {
+      "prompt": "Modify the image to remove the cilantro from the pot. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the pot looks natural and realistic without the cilantro.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image178.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image227-red",
+    "payload": {
+      "prompt": "Modify the image to remove the red heart decoration on the ukulele. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the ukulele looks natural and unaltered aside from the removal of the decoration.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image227.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image169-flower",
+    "payload": {
+      "prompt": "Modify the image so that the flower on the hat is replaced with a bow. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the bow looks natural and well-integrated with the hat.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image169.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image210-printer",
+    "payload": {
+      "prompt": "Modify the image so that the printer is moved to the center. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while repositioning the printer to the central area of the image in a natural and realistic manner.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image210.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image164-decoration",
+    "payload": {
+      "prompt": "Modify the image so that the decoration on the cup body is replaced with a rose pattern. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while seamlessly integrating the rose design to look natural and realistic.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image164.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image206-dolls",
+    "payload": {
+      "prompt": "Modify the image so that the doll's eyes are open. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while making the doll's eyes appear naturally open and expressive.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image206.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image143-belt",
+    "payload": {
+      "prompt": "Modify the image to add a belt around the middle of the dress. Keep the original style, color, and texture of the dress intact, ensuring the belt looks natural and well-integrated with the garment. Maintain the lighting and perspective of the original photo.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image143.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image207-shoes",
+    "payload": {
+      "prompt": "Modify the image so that the shoes are changed to a blue color. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, while replacing the current shoe color with a natural and realistic blue tone.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image207.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image174-text",
+    "payload": {
+      "prompt": "Modify the image so that the text 'YUANSU' is changed to 'SHIJUE'. Keep the original style, font, and color consistent with the existing design, ensuring the new text blends naturally into the image without altering other elements.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image174.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image156-text",
+    "payload": {
+      "prompt": "Modify the image by changing the text from 'Waiting for the spring breeze to be proud, waiting for time's approval' to 'Waiting for the wind to come, also waiting for you'. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the new text blends naturally and harmoniously with the image.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image156.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image242-text",
+    "payload": {
+      "prompt": "Modify the image so that the text 'iPhone' is replaced with 'Honor'. Keep the original font style, size, color, and positioning consistent to maintain the natural appearance of the image. Ensure the modification blends seamlessly with the surrounding elements.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image242.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image191-text",
+    "payload": {
+      "prompt": "Modify the image so that the text '星海科技' is changed to '荣耀终端'. Keep the original style, font, color, and surrounding elements unchanged to maintain a natural and seamless appearance.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image191.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image200-text",
+    "payload": {
+      "prompt": "Modify the image by changing the text 'natural care' to 'organic care' using the Microsoft YaHei font with a font size of 22. Keep the rest of the image unchanged.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image200.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image165-text",
+    "payload": {
+      "prompt": "Modify the image by adding the text '智慧视觉' below the logo. Ensure the added text integrates seamlessly with the existing design, maintaining the original style, color scheme, and overall visual balance of the image.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image165.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image243-text",
+    "payload": {
+      "prompt": "Modify the image by adding the text 'natural care' below the logo in a FangSong-style font, size 24. Keep the original image's style, colors, and layout unchanged, ensuring the added text blends naturally with the existing design.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image243.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image152-text",
+    "payload": {
+      "prompt": "Modify the image by adding the text 'Honor Digital Phone Global Ambassador Xiao Zhan Powerfully Interprets the Four-Color Aesthetic Masterpiece!' on the billboard. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the added text looks natural and integrated with the billboard surface.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image152.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image192-have",
+    "payload": {
+      "prompt": "Modify the image to have an anime style. Keep the original composition and details intact, but transform the visual elements to reflect the characteristic features of anime art, such as vibrant colors, stylized characters, and clean lines.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image192.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image145-have",
+    "payload": {
+      "prompt": "Modify the image to have a cartoon style. Keep the original composition and elements intact, but transform the visual appearance to resemble a colorful, stylized cartoon illustration with bold outlines and simplified shapes.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image145.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image140-have",
+    "payload": {
+      "prompt": "Modify the image to have a watercolor painting style. Keep the original composition and details intact, but apply soft, flowing brush strokes and subtle color blending typical of watercolor art, creating a delicate and artistic effect.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image140.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image144-have",
+    "payload": {
+      "prompt": "Modify the image to have a sketch style, resembling a hand-drawn pencil sketch. Maintain the original composition and details, but transform the textures and shading to mimic pencil strokes and shading techniques, giving the photo an artistic, monochrome sketch appearance.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image144.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image257-have",
+    "payload": {
+      "prompt": "Modify the image to have a 3D emoji style, with expressive and exaggerated facial features typical of 3D emoji designs. Keep the original image's perspective, lighting, and background elements unchanged while transforming the main subject into a vibrant, cartoonish 3D emoji character.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image257.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image193-chibi",
+    "payload": {
+      "prompt": "Modify the image to create a chibi-style avatar. Maintain the original composition and colors, but transform the character into a cute, stylized, and simplified cartoon form typical of chibi art.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image193.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image159-have",
+    "payload": {
+      "prompt": "Modify the image to create a photo-realistic style picture. Maintain the original composition, lighting, and details, enhancing the image to have a natural and authentic photographic appearance.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image159.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image246-have",
+    "payload": {
+      "prompt": "Modify the image to have a traditional Chinese style, incorporating elements such as classical Chinese architecture, elegant landscapes, and cultural motifs. Maintain the original composition and lighting while enhancing the image with authentic colors and textures characteristic of Chinese art.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image246.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image248-have",
+    "payload": {
+      "prompt": "Modify the image to have a watercolor painting style. Keep the original composition and details intact, but apply soft, flowing brush strokes and subtle color blending typical of watercolor art.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image248.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image183-have",
+    "payload": {
+      "prompt": "Modify the image to have a 3D toy style appearance. Enhance the photo with vibrant colors, smooth and rounded shapes typical of 3D toys, and a playful, cartoonish look. Keep the original composition and lighting intact while transforming the objects to look like realistic 3D toys.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image183.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image232-have",
+    "payload": {
+      "prompt": "Modify the image to have a style inspired by Studio Ghibli, featuring soft colors, whimsical and detailed backgrounds, and a warm, nostalgic atmosphere. Keep the original composition and elements intact while applying the Ghibli-style artistic effects.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image232.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image235-have",
+    "payload": {
+      "prompt": "Modify the image to have a claymation style, with textures and colors resembling handcrafted clay models. Maintain the original composition and lighting, while transforming the visual appearance to mimic the unique, tactile look of clay art.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image235.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image223-have",
+    "payload": {
+      "prompt": "Modify the image to have a cyber-mechanical style, incorporating futuristic mechanical elements, metallic textures, and neon lighting effects. Maintain the original composition and details while transforming the overall aesthetic to a high-tech cybernetic theme.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image223.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image172-have",
+    "payload": {
+      "prompt": "Modify the image to have a superhero comic book style. Keep the original composition and characters intact, but apply bold colors, dynamic shading, and stylized line art typical of superhero comics.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image172.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image139-have",
+    "payload": {
+      "prompt": "Modify the image to have a pixel art style. Keep the original composition and colors, but transform the image into a pixelated, retro video game aesthetic with clear, blocky pixels and simplified details.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image139.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image250-stray",
+    "payload": {
+      "prompt": "Modify the image to remove the stray hairs on the forehead and transform the style into a Ghibli-inspired illustration. Maintain the original composition, lighting, and facial features while applying the characteristic soft colors, smooth lines, and whimsical atmosphere typical of Ghibli animation.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image250.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image236-anime",
+    "payload": {
+      "prompt": "Modify the image to an anime style and remove the handbag from the hand. Keep the original character's pose, lighting, and background elements unchanged, ensuring a natural and seamless modification.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image236.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image218-reflections",
+    "payload": {
+      "prompt": "Modify the image to remove the reflections on the glasses and eliminate the pink balloons. Generate a new image with a pixel art style. Keep the original composition, lighting, and other elements unchanged while applying these modifications.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image218.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image220-reflections",
+    "payload": {
+      "prompt": "Modify the image to remove the reflections on the glasses, and transform the image into a 3D toy style. Maintain the original composition and lighting while giving the subject a playful, three-dimensional toy-like appearance with vibrant colors and smooth textures.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image220.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image157-passersby",
+    "payload": {
+      "prompt": "Modify the image to remove the passersby and transform the scene into a watercolor style painting. Maintain the original composition and lighting, while applying soft, flowing watercolor textures and colors to create an artistic and delicate effect.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image157.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image175-wrinkles",
+    "payload": {
+      "prompt": "Modify the image to remove the wrinkles on the shirt and eliminate the hat being held. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, ensuring the modifications look natural and seamless.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image175.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image179-reflections",
+    "payload": {
+      "prompt": "Modify the image to remove the reflections on the glass and eliminate the black object on the left side. Maintain the original lighting, perspective, and surrounding elements to ensure a natural and seamless appearance.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image179.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image244-reflections",
+    "payload": {
+      "prompt": "Modify the image to remove the reflections on the glass and generate a romantic light and shadow style. Keep the original composition and lighting consistent, enhancing the image with soft, warm, and dreamy lighting effects that evoke a romantic atmosphere.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image244.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image197-all",
+    "payload": {
+      "prompt": "Modify the image by removing all English text present in the picture, and replace the phrase '浪漫降落' with '执子之手，与子偕老'. Keep the original style, colors, and composition intact to maintain a natural and harmonious look.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image197.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image208-wrinkles",
+    "payload": {
+      "prompt": "Modify the image to remove the wrinkles on the clothes and generate a delicate anime-style picture, adding the text 'Never Give Up'. Keep the original character's pose, lighting, and background elements unchanged, enhancing the image with smooth textures and vibrant colors while integrating the text naturally into the composition.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image208.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image239-watermark",
+    "payload": {
+      "prompt": "Modify the image to remove the watermark, and add the text 'Delicious Crayfish Get' at the top of the image. Keep the original composition, colors, and lighting unchanged to maintain a natural look.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image239.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image198-cartoon",
+    "payload": {
+      "prompt": "Modify the image to be a cartoon style, and add the text \"Happy Parent-Child Time\" at the top of the image. Keep the original composition and colors consistent with a cheerful and playful atmosphere.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image198.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image194-have",
+    "payload": {
+      "prompt": "Modify the image to have a Ghibli-style aesthetic, capturing the whimsical and detailed animation look typical of Studio Ghibli films. Maintain the original composition and lighting while applying the characteristic soft colors and artistic style.\tModify the image so that the flower in the girl's hand is changed to a pink one. Keep the original photo’s perspective, lighting, and surrounding elements unchanged, only replacing the flower with a natural-looking pink flower.\tModify the image by changing the boy's outfit to a black suit. Preserve the original pose, lighting, and background, ensuring the black suit looks realistic and fits naturally on the boy.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image194.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image245-have",
+    "payload": {
+      "prompt": "Modify the image to have a traditional Chinese style, incorporating elements such as classical architecture, traditional clothing, and natural scenery that reflect the essence of Chinese culture. Maintain the original composition and lighting to preserve authenticity.\nModify the image so that the flowers on the right side are brighter and more vivid in color, enhancing their visual impact while keeping the rest of the image unchanged.\nModify the image by changing the color of the oranges on the table from yellow to a natural, vibrant orange. Ensure the texture and lighting on the fruit remain realistic and consistent with the original image.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image245.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  },
+  {
+    "name": "image221-have",
+    "payload": {
+      "prompt": "Modify the image to have a claymation style, with textures and colors resembling handcrafted clay models, while preserving the original composition and details.\nModify the image to make the dog appear cuter, enhancing its features to be more adorable and appealing, without changing the overall scene.\nModify the image to make the eyes brighter and more vivid, adding a natural shine and sparkle, while keeping the rest of the image unchanged.",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 20,
+      "image_path": "media/image221.jpeg",
+      "extra": {
+        "configuration": {
+          "safety": "standard",
+          "edit_type": "color_adjustment"
+        },
+        "input": {
+          "strength": 0.35
+        }
+      }
+    }
+  }
+]

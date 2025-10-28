@@ -45,6 +45,9 @@ AZURE_GPT_IMAGE_API_VERSION=2024-12-01-preview
 # Optional: Polling configuration
 AZURE_GPT_IMAGE_POLL_INTERVAL=2.0
 AZURE_GPT_IMAGE_MAX_POLL_ATTEMPTS=60
+
+# Optional: Parallel edit configuration
+AZURE_GPT_IMAGE_MAX_CONCURRENCY=5
 ```
 
 ### Configuration in Code

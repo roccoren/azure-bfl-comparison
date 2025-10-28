@@ -38,3 +38,6 @@ output/
 media/
 media.zip
 models/
+*.tar.gz
+*.zip
+

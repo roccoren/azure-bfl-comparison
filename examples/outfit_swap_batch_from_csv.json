@@ -1,0 +1,442 @@
+[
+  {
+    "name": "image106",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image106.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image107.jpeg",
+        "output_subdir": "image106",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image110",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image110.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image92.jpeg",
+        "output_subdir": "image110",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image108",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image108.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image85.jpeg",
+        "output_subdir": "image108",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image112",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image112.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image111.jpeg",
+        "output_subdir": "image112",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image81",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image81.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image80.jpeg",
+        "output_subdir": "image81",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image124",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image124.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image123.jpeg",
+        "output_subdir": "image124",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image82",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image82.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image83.jpeg",
+        "output_subdir": "image82",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image93",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image93.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image92.jpeg",
+        "output_subdir": "image93",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image88",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image88.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image89.jpeg",
+        "output_subdir": "image88",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image109",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image109.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image85.jpeg",
+        "output_subdir": "image109",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image84",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image84.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image85.jpeg",
+        "output_subdir": "image84",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image73",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image73.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image74.jpeg",
+        "output_subdir": "image73",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image73_2",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image73.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image75.jpeg",
+        "output_subdir": "image73_2",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image98",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image98.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image99.jpeg",
+        "output_subdir": "image98",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image76",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image76.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image77.jpeg",
+        "output_subdir": "image76",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image131",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image131.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image130.jpeg",
+        "output_subdir": "image131",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image125",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image125.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image99.jpeg",
+        "output_subdir": "image125",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image127",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image127.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image126.jpeg",
+        "output_subdir": "image127",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image101",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image101.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image100.jpeg",
+        "output_subdir": "image101",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  },
+  {
+    "name": "image94",
+    "payload": {
+      "prompt": "",
+      "negative_prompt": "",
+      "guidance_scale": 6.5,
+      "num_inference_steps": 28,
+      "image_path": "media/image94.jpeg",
+      "extra": {
+        "scheduler": "euler_a",
+        "output_format": "png"
+      },
+      "outfit": {
+        "clothes_image_path": "media/image95.jpeg",
+        "output_subdir": "image94",
+        "strength": null,
+        "sam_model_type": "vit_h",
+        "sam_checkpoint": null,
+        "device": null
+      }
+    }
+  }
+]
