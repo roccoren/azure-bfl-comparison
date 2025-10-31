@@ -11,7 +11,7 @@ from typing import Dict, Tuple
 
 import httpx
 from dotenv import load_dotenv
-from PIL import Image, ImageOps
+from PIL import Image
 
 from azure_bfl_compare.clients.azure_flux import AzureFluxClient
 from azure_bfl_compare.config import AzureFluxConfig
@@ -174,16 +174,6 @@ def _apply_background(color: str) -> Tuple[int, int, int]:
     return tuple(int(value[i : i + 2], 16) for i in range(0, 6, 2))  # type: ignore[return-value]
 
 
-def _determine_clothes_mask(image: Image.Image) -> Image.Image:
-    """Create an opaque mask for the resized clothing image."""
-    if image.mode == "RGBA":
-        alpha = image.split()[-1]
-        return alpha.point(lambda p: 255 if p > 0 else 0)
-    grayscale = ImageOps.grayscale(image)
-    # Use a modest threshold: anything darker than near-white becomes editable.
-    return grayscale.point(lambda p: 255 if p < 250 else 0)
-
-
 def create_combined_assets(
     original_path: Path,
     mask_path: Path,
@@ -233,8 +223,6 @@ def create_combined_assets(
 
     combined_mask = Image.new("L", (canvas_width, canvas_height), 0)
     combined_mask.paste(person_mask, (0, 0))
-    clothes_mask = _determine_clothes_mask(clothes_resized)
-    combined_mask.paste(clothes_mask, (clothes_offset_x, clothes_offset_y))
 
     square_size = max(canvas_width, canvas_height)
     if square_size != canvas_width or square_size != canvas_height:

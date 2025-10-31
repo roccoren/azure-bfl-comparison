@@ -1,19 +1,19 @@
 [
   {
-    "name": "try_on_01",
+    "name": "try_on_05",
     "payload": {
       "prompt": "",
       "negative_prompt": "",
       "guidance_scale": 6.5,
       "num_inference_steps": 28,
-      "image_path": "images/try_on/person/1.jpg",
-      "mask_path": "images/try_on/mask/1.jpg",
+      "image_path": "images/try_on/person/5.jpg",
+      "mask_path": "images/try_on/mask/5.jpg",
       "extra": {
         "scheduler": "euler_a",
         "output_format": "png"
       },
       "outfit": {
-        "clothes_image_path": "images/try_on/clothes/1.jpg",
+        "clothes_image_path": "images/try_on/clothes/5.jpg",
         "output_subdir": "try_on_01",
         "strength": null,
         "sam_model_type": "vit_h",
